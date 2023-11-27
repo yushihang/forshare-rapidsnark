@@ -132,32 +132,32 @@ extern "C" void Fr_rawSubRegular(FrRawElement pRawResult, FrRawElement pRawA, Fr
 #else
 
 
-void Fr_copy(PFrElement r, PFrElement a);
-void Fr_mul(PFrElement r, PFrElement a, PFrElement b);
+extern "C" void Fr_copy(PFrElement r, PFrElement a);
+extern "C" void Fr_mul(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_toNormal(PFrElement r, PFrElement a);
 
-void Fr_toLongNormal(PFrElement r, PFrElement a);
-int Fr_isTrue(PFrElement pE);
-void Fr_copyn(PFrElement r, PFrElement a, int n);
-void Fr_lt(PFrElement r, PFrElement a, PFrElement b);
-int Fr_toInt(PFrElement pE);
+extern "C" void Fr_toLongNormal(PFrElement r, PFrElement a);
+extern "C" int Fr_isTrue(PFrElement pE);
+extern "C" void Fr_copyn(PFrElement r, PFrElement a, int n);
+extern "C" void Fr_lt(PFrElement r, PFrElement a, PFrElement b);
+extern "C" int Fr_toInt(PFrElement pE);
 extern "C" void Fr_shl(PFrElement r, PFrElement a, PFrElement b);
-void Fr_shr(PFrElement r, PFrElement a, PFrElement b);
-void Fr_band(PFrElement r, PFrElement a, PFrElement b);
+extern "C" void Fr_shr(PFrElement r, PFrElement a, PFrElement b);
+extern "C" void Fr_band(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_bor(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_bxor(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_bnot(PFrElement r, PFrElement a);
-void Fr_sub(PFrElement r, PFrElement a, PFrElement b);
-void Fr_eq(PFrElement r, PFrElement a, PFrElement b);
-void Fr_neq(PFrElement r, PFrElement a, PFrElement b);
-void Fr_add(PFrElement r, PFrElement a, PFrElement b);
-void Fr_gt(PFrElement r, PFrElement a, PFrElement b);
+extern "C" void Fr_sub(PFrElement r, PFrElement a, PFrElement b);
+extern "C" void Fr_eq(PFrElement r, PFrElement a, PFrElement b);
+extern "C" void Fr_neq(PFrElement r, PFrElement a, PFrElement b);
+extern "C" void Fr_add(PFrElement r, PFrElement a, PFrElement b);
+extern "C" void Fr_gt(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_leq(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_geq(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_lor(PFrElement r, PFrElement a, PFrElement b);
 extern "C" void Fr_lnot(PFrElement r, PFrElement a);
-void Fr_land(PFrElement r, PFrElement a, PFrElement b);
-void Fr_neg(PFrElement r, PFrElement a);
+extern "C" void Fr_land(PFrElement r, PFrElement a, PFrElement b);
+extern "C" void Fr_neg(PFrElement r, PFrElement a);
 extern "C" void Fr_toMontgomery(PFrElement r, PFrElement a);
 extern "C" void Fr_square(PFrElement r, PFrElement a);
  void Fr_rawCopy(FrRawElement pRawResult, const FrRawElement pRawA);
