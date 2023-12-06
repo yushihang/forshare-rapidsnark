@@ -1,0 +1,11 @@
+/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/CMakeFiles/install.dir
+/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/CMakeFiles/ALL_BUILD.dir
+/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/CMakeFiles/ZERO_CHECK.dir
+/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/CMakeFiles/fr.dir
+/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/CMakeFiles/fq.dir
+/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/CMakeFiles/rapidsnarkStatic.dir
+/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/CMakeFiles/rapidsnarkStaticFrFq.dir
+/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/CMakeFiles/prover.dir
+/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/CMakeFiles/rapidsnark.dir
+/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/CMakeFiles/test_prover.dir
+/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/CMakeFiles/install.dir
