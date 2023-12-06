@@ -1832,7 +1832,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}_${ARCHS}";
+				CONFIGURATION_BUILD_DIR = "$(SOURCE_ROOT)/libs/$(CONFIGURATION)_${PLATFORM_NAME}_${ARCHS}";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -1924,7 +1924,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}_${ARCHS}";
+				CONFIGURATION_BUILD_DIR = "$(SOURCE_ROOT)/libs/$(CONFIGURATION)_${PLATFORM_NAME}_${ARCHS}";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -2418,7 +2418,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}_${ARCHS}";
+				CONFIGURATION_BUILD_DIR = "$(SOURCE_ROOT)/libs/$(CONFIGURATION)_${PLATFORM_NAME}_${ARCHS}";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -2731,7 +2731,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}_${ARCHS}";
+				CONFIGURATION_BUILD_DIR = "$(SOURCE_ROOT)/libs/$(CONFIGURATION)_${PLATFORM_NAME}_${ARCHS}";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
