@@ -3,150 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		A1CF90D2383141A59110C653 /* ZERO_CHECK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = A8C98D9E140A49AB910B296A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
-			buildPhases = (
-				0DEA58527DD020F944920F1B /* Generate CMakeFiles/ZERO_CHECK */,
-			);
-			dependencies = (
-			);
-			name = ZERO_CHECK;
-			productName = ZERO_CHECK;
-		};
-		FACBB098CEFB48C5AD9A0219 /* install */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = CF5D5062AFF14C61B8F67B2F /* Build configuration list for PBXAggregateTarget "install" */;
-			buildPhases = (
-				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
-			);
-			dependencies = (
-				C46A6F48BF084BF3B43F176D /* PBXTargetDependency */,
-			);
-			name = install;
-			productName = install;
-		};
-		FBE078973FCF40F6AA9056E1 /* ALL_BUILD */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 4D391F6BC3714366B8090273 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
-			buildPhases = (
-				5A85E5500D247B94FFCA8CB5 /* Generate CMakeFiles/ALL_BUILD */,
-			);
-			dependencies = (
-				8E8711C3E3EC4CD28A91BC4E /* PBXTargetDependency */,
-				7CDCBA6ECF434048B94C018E /* PBXTargetDependency */,
-				DAC349CCBAB447098F7FC7B5 /* PBXTargetDependency */,
-				13643D1162C44E44BC1AB805 /* PBXTargetDependency */,
-				FD29358F64D045199DBD438A /* PBXTargetDependency */,
-				95FB7323977E42B3B6044F8C /* PBXTargetDependency */,
-				33F7934E903B49209374BBC4 /* PBXTargetDependency */,
-				36C05151C6A84E4F83A4782B /* PBXTargetDependency */,
-			);
-			name = ALL_BUILD;
-			productName = ALL_BUILD;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		0CD2C6B74AE440F38C8B7802 /* splitparstr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44075A6C1661409EA30F8631 /* splitparstr.cpp */; };
 		1288E5D013B84D55AFF8EF50 /* zkey_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D904F5870BEE4B0BB9F8E2BD /* zkey_utils.cpp */; };
 		18CBEC63C13A402E8FF1F1D3 /* fr_raw_generic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B5F28E30E149628789BF75 /* fr_raw_generic.cpp */; };
-		1FF325C1FAD34EE18113D848 /* prover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89A18FC05D364680889E3D6A /* prover.cpp */; };
-		2AA11A2BF5224E01A2B22C6A /* fr_raw_generic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BD52516BE084214A05E9B41 /* fr_raw_generic.cpp */; };
 		2BA0517E25A24F59BDB005E7 /* fq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07C7D7BF346B438CA21BE262 /* fq.cpp */; };
-		338EA7F6447845AF890B44D1 /* fileloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65B99FE631224CE080C17070 /* fileloader.cpp */; };
-		33EBDA246A304B16949EA0FB /* binfile_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EA32171795E41A08E0B33A8 /* binfile_utils.cpp */; };
-		3CBAD506562C4751B5E95D91 /* misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2ED789293042519256AF32 /* misc.cpp */; };
-		3D0AF6527865459FA7428DC7 /* fq_raw_generic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5139009C9435B83059732 /* fq_raw_generic.cpp */; };
 		42907F2F25F04DBE9FF5DC05 /* prover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78A59E473D3541CEADB05F60 /* prover.cpp */; };
-		4E001177C59D40FEB6039B4B /* fq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D613A04B78934ECC915A60DF /* fq.cpp */; };
-		55E56184F35442BFA283EB06 /* fq_generic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D2F8FFA68A34261A90FC764 /* fq_generic.cpp */; };
-		57C0737F04B4487D84FF7129 /* fr_generic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68B01C14CA384E3BA8CEC8B2 /* fr_generic.cpp */; };
 		616F4BBDC45A42C89BECBCC6 /* fileloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B88516C4DD98464FBF9BAC5B /* fileloader.cpp */; };
-		616FFF920A7F417583EF1137 /* binfile_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6844AB5299204D83B122B6C6 /* binfile_utils.cpp */; };
 		6475D3D9A9B147C9AAFEA6DF /* misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C23983B561E4034A9358EAE /* misc.cpp */; };
 		6C2C3A42823E42489915CC2D /* binfile_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB1F4989CC7344AAB8ECAF8C /* binfile_utils.cpp */; };
-		7257BB9971B442B0A545E526 /* fileloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C11BBCC1140457280C5C4CC /* fileloader.cpp */; };
 		7A81908DA3A24F259C468DE9 /* fr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8157D10C2674C16A802C6F4 /* fr.cpp */; };
-		7E49E0A6398E4C43A4C149C9 /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD6E0DF8DB0544E38E5604D5 /* logger.cpp */; };
-		86352099E67A4640803E8D60 /* fr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2F992703C1846E5A84E5FDA /* fr.cpp */; };
-		86647B6253EB42ECA814BF0F /* main_prover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED1CA8B476AA4F469059FED4 /* main_prover.cpp */; };
-		86FD0CD3697C48F2869B3AD9 /* alt_bn128.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEA0EABC700243B8974A0EE5 /* alt_bn128.cpp */; };
-		8A398E6C46F546C7AC1B8A2C /* naf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CE78957E2354A3085A302AD /* naf.cpp */; };
 		8B760E75AE4C4C419E1A7DEF /* fq_generic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51503DC8484F4066A928201E /* fq_generic.cpp */; };
 		92A1BF2028C84291AFDA92AC /* fq_raw_generic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2927EA8A5D04563ADA2F645 /* fq_raw_generic.cpp */; };
 		95E8B23C022C4829B505DC79 /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E76AA73266C54363A89681DA /* logger.cpp */; };
-		968E209A048042E591F092A9 /* misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47291FDC08B74C06A74D7B71 /* misc.cpp */; };
-		A175C9900F004D949FCC6D30 /* zkey_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC596D1426F64119ABFE871A /* zkey_utils.cpp */; };
-		A5BBEF859456492BBBDC0B78 /* splitparstr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48A585ADF96D43E1B02596C1 /* splitparstr.cpp */; };
-		ABA0B849404642C4B49B9BED /* naf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F67E75737730457AA6E3E72B /* naf.cpp */; };
-		BB251D2B9D4949C080FE55CC /* wtns_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEF55C1CCD524F2EA3128BDB /* wtns_utils.cpp */; };
 		BE9E56C2ADE5448E9D401596 /* wtns_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C27F82CEFC64439F935B0740 /* wtns_utils.cpp */; };
-		C57E3652812F474D93861FAA /* alt_bn128.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C399F00A169D4FF5B5367BDB /* alt_bn128.cpp */; };
-		C7EFE627DBB94C60837D5326 /* test_prover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 286BD8C5F2B540518E4293B1 /* test_prover.cpp */; };
-		CBC47DC90B184D7F933025DC /* zkey_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BA73E3BFA12417981251446 /* zkey_utils.cpp */; };
-		D1390DBB046B4CC5882E9E44 /* wtns_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7879C9FF78404323BBDF4D46 /* wtns_utils.cpp */; };
-		D7B98CB994284F9589F8E37C /* prover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEE6E2EB0B0440E5B120BD8F /* prover.cpp */; };
 		EB35C0BDDF8241D4A6EB779C /* naf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71B605FB68C5461EA3F2FA8C /* naf.cpp */; };
 		ED01896247C943889CD8196F /* fr_generic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 359624BB1F3542BFA53172AF /* fr_generic.cpp */; };
-		F103F941851248908D8ADD06 /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EE3351795410BA4216891 /* logger.cpp */; };
 		F3F9E9D85DCF44C2A253AF89 /* splitparstr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0701061B5FE0454BB7709C9D /* splitparstr.cpp */; };
 		F4D646D8A215416A99D7BEDE /* alt_bn128.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CE3D54999B3468E99C2F994 /* alt_bn128.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0AB3FDFF041D4E7780594D8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1CF90D2383141A59110C653;
-			remoteInfo = ZERO_CHECK;
-		};
-		0B0FB1E5EAD848D28CAE79A4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E7B3E211803C411C8E5E6198;
-			remoteInfo = prover;
-		};
-		0C7E650EC7D949518A4F85DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1CF90D2383141A59110C653;
-			remoteInfo = ZERO_CHECK;
-		};
 		125425BAE6C94974B66C0F57 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EFB3EB754F324F4BB75C071B;
 			remoteInfo = fr;
-		};
-		1BD3885912244516A057C206 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1CF90D2383141A59110C653;
-			remoteInfo = ZERO_CHECK;
-		};
-		24D912B65E2B478AB2EB3B1B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 011D688AD7DB40D2BC817FF6;
-			remoteInfo = fq;
-		};
-		2C3CABA77DDB474886E7009B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1CF90D2383141A59110C653;
-			remoteInfo = ZERO_CHECK;
 		};
 		35A03BE87C5649EB9A209861 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -155,13 +40,6 @@
 			remoteGlobalIDString = EFB3EB754F324F4BB75C071B;
 			remoteInfo = fr;
 		};
-		48FA451D5764407DBD2C36A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 52C1715F2F0F471185049678;
-			remoteInfo = rapidsnark;
-		};
 		4961FC7374CC403FB6D182B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
@@ -169,136 +47,9 @@
 			remoteGlobalIDString = 011D688AD7DB40D2BC817FF6;
 			remoteInfo = fq;
 		};
-		4A2C3545B27E42358F9E14B3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A372A9B2334E41839417B22B;
-			remoteInfo = rapidsnarkStatic;
-		};
-		4B3AA423605649D3B874949D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EFB3EB754F324F4BB75C071B;
-			remoteInfo = fr;
-		};
-		4F3388CDDC054AA886D809FA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EFB3EB754F324F4BB75C071B;
-			remoteInfo = fr;
-		};
-		720C8459846542978424B46F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1CF90D2383141A59110C653;
-			remoteInfo = ZERO_CHECK;
-		};
-		75F06D7A6E974BB695169A9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1CF90D2383141A59110C653;
-			remoteInfo = ZERO_CHECK;
-		};
-		7A8FF927A229416C90CCFFFB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FBE078973FCF40F6AA9056E1;
-			remoteInfo = ALL_BUILD;
-		};
-		8A6B8E21C78B436C83C902D8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 011D688AD7DB40D2BC817FF6;
-			remoteInfo = fq;
-		};
-		94A71AABC52D45ADA702EBFE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EFB3EB754F324F4BB75C071B;
-			remoteInfo = fr;
-		};
-		AD56AFCE7BDC4A88AAFF7C85 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A9DBDA8A11A147E7AAC35487;
-			remoteInfo = rapidsnarkStaticFrFq;
-		};
-		C46B129F9426471691B7B29C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 011D688AD7DB40D2BC817FF6;
-			remoteInfo = fq;
-		};
-		C590CB1BEFC546E2ABF6CF44 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 011D688AD7DB40D2BC817FF6;
-			remoteInfo = fq;
-		};
-		CA187631679A4A1B9D2734B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A372A9B2334E41839417B22B;
-			remoteInfo = rapidsnarkStatic;
-		};
-		CBD8F78DB85F488288BD64BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EFB3EB754F324F4BB75C071B;
-			remoteInfo = fr;
-		};
-		CED330BEBB5C416994792E10 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EFB3EB754F324F4BB75C071B;
-			remoteInfo = fr;
-		};
-		D169920E6DAE4DF18F6ECDF3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1CF90D2383141A59110C653;
-			remoteInfo = ZERO_CHECK;
-		};
-		DF2D3AAB368244ABB3732A0C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 011D688AD7DB40D2BC817FF6;
-			remoteInfo = fq;
-		};
-		F8614332953F443BADD1187C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1CF90D2383141A59110C653;
-			remoteInfo = ZERO_CHECK;
-		};
-		FE6F91AF48774F9DB5B925A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8E3A973B9DC42F5924750D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AB17EEEB5A15408182704669;
-			remoteInfo = test_prover;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		036C2F944AF44E4CBA84FAC4 /* librapidsnark.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = librapidsnark.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		0701061B5FE0454BB7709C9D /* splitparstr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = splitparstr.cpp; path = depends/ffiasm/c/splitparstr.cpp; sourceTree = SOURCE_ROOT; };
 		07C7D7BF346B438CA21BE262 /* fq.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fq.cpp; path = build/fq.cpp; sourceTree = SOURCE_ROOT; };
 		08842AEBA2064135BF2A9A19 /* binfile_utils.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = binfile_utils.hpp; path = src/binfile_utils.hpp; sourceTree = SOURCE_ROOT; };
@@ -351,7 +102,6 @@
 		95ED4400EEE141D88E39579F /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = build_prover_ios_simulator/src/CMakeFiles/fq.dir/Info.plist; sourceTree = SOURCE_ROOT; };
 		966E5CB6BBAA4DEF9C2646C5 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		98CF2E397BFD4414B8A486B7 /* zkey_utils.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = zkey_utils.hpp; path = src/zkey_utils.hpp; sourceTree = SOURCE_ROOT; };
-		9C137D8CD9E04DC7BC6D01B5 /* test_prover */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; name = test_prover; path = test_prover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E257F898E0A4AEDB442DBA1 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = build_prover_ios_simulator/src/CMakeFiles/fr.dir/Info.plist; sourceTree = SOURCE_ROOT; };
 		AA2ED789293042519256AF32 /* misc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = misc.cpp; path = depends/ffiasm/c/misc.cpp; sourceTree = SOURCE_ROOT; };
 		AABF46D2D9724AE584E9F8EB /* zkey_utils.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = zkey_utils.hpp; path = src/zkey_utils.hpp; sourceTree = SOURCE_ROOT; };
@@ -366,9 +116,7 @@
 		B88516C4DD98464FBF9BAC5B /* fileloader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fileloader.cpp; path = src/fileloader.cpp; sourceTree = SOURCE_ROOT; };
 		C27F82CEFC64439F935B0740 /* wtns_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wtns_utils.cpp; path = src/wtns_utils.cpp; sourceTree = SOURCE_ROOT; };
 		C399F00A169D4FF5B5367BDB /* alt_bn128.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = alt_bn128.cpp; path = depends/ffiasm/c/alt_bn128.cpp; sourceTree = SOURCE_ROOT; };
-		C8919BA6110845C3AC48AC08 /* prover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = prover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB7D302247A44A3A07A88F3 /* fr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = fr.hpp; path = build/fr.hpp; sourceTree = SOURCE_ROOT; };
-		CEDA0D5CBC834F6ABB0FFAC5 /* librapidsnark-fr-fq.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "librapidsnark-fr-fq.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF55C1CCD524F2EA3128BDB /* wtns_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wtns_utils.cpp; path = src/wtns_utils.cpp; sourceTree = SOURCE_ROOT; };
 		D32EB9EFE78F421AA500A21F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		D613A04B78934ECC915A60DF /* fq.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fq.cpp; path = build/fq.cpp; sourceTree = SOURCE_ROOT; };
@@ -396,20 +144,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CA8D35E093540ACB7E9C7AF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B087FBAF4443402E8302A93C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BD661967D40E41AC86D8D9FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -418,20 +152,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D482287A17E1443797AFACF7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D57E555BFD3C449A8D9EC09D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EF6B053122854689A8BA3314 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -720,11 +440,7 @@
 			children = (
 				59D02DBC41474764997421C5 /* libfq.a */,
 				92C4FA9E2D8B418B8EA83E0C /* libfr.a */,
-				C8919BA6110845C3AC48AC08 /* prover.app */,
-				036C2F944AF44E4CBA84FAC4 /* librapidsnark.dylib */,
 				3F65B8C1D05D467DA5184B4B /* librapidsnark.a */,
-				CEDA0D5CBC834F6ABB0FFAC5 /* librapidsnark-fr-fq.a */,
-				9C137D8CD9E04DC7BC6D01B5 /* test_prover */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -789,32 +505,11 @@
 			);
 			dependencies = (
 				3964AA1A9B7E40AAAF982EB4 /* PBXTargetDependency */,
-				3B8AFFDB2B2E4A1583C5220F /* PBXTargetDependency */,
 			);
 			name = fq;
 			productName = fq;
 			productReference = 59D02DBC41474764997421C5 /* libfq.a */;
 			productType = "com.apple.product-type.library.static";
-		};
-		52C1715F2F0F471185049678 /* rapidsnark */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A6B8329A11C438686FBF3CA /* Build configuration list for PBXNativeTarget "rapidsnark" */;
-			buildPhases = (
-				B523E54830EF48AE90B464AD /* Sources */,
-				EF6B053122854689A8BA3314 /* Frameworks */,
-				9E76A06266C1D9105DFE12A5 /* CMake PostBuild Rules */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				513EC6091AE4473E8400A87F /* PBXTargetDependency */,
-				83FE6A0532A54FD088E0F2C5 /* PBXTargetDependency */,
-				B22EDA61FC314009B8014FD3 /* PBXTargetDependency */,
-			);
-			name = rapidsnark;
-			productName = rapidsnark;
-			productReference = 036C2F944AF44E4CBA84FAC4 /* librapidsnark.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
 		};
 		A372A9B2334E41839417B22B /* rapidsnarkStatic */ = {
 			isa = PBXNativeTarget;
@@ -828,70 +523,11 @@
 			dependencies = (
 				9134B4E703C341B19BF95D63 /* PBXTargetDependency */,
 				58B38F121C304CFEB50546C4 /* PBXTargetDependency */,
-				A1D3FB8AE60F48B1ACF5E696 /* PBXTargetDependency */,
 			);
 			name = rapidsnarkStatic;
 			productName = rapidsnarkStatic;
 			productReference = 3F65B8C1D05D467DA5184B4B /* librapidsnark.a */;
 			productType = "com.apple.product-type.library.static";
-		};
-		A9DBDA8A11A147E7AAC35487 /* rapidsnarkStaticFrFq */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4013BFDF0F054C7EB337AB11 /* Build configuration list for PBXNativeTarget "rapidsnarkStaticFrFq" */;
-			buildPhases = (
-				AF49C1FCABD64BDCAF6C3730 /* Sources */,
-				B087FBAF4443402E8302A93C /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				64D11209B6534F209FDC97E6 /* PBXTargetDependency */,
-				C5F2BBDEC33F4EDF9827570D /* PBXTargetDependency */,
-				9CA1693CB0144634ACD9E72A /* PBXTargetDependency */,
-			);
-			name = rapidsnarkStaticFrFq;
-			productName = rapidsnarkStaticFrFq;
-			productReference = CEDA0D5CBC834F6ABB0FFAC5 /* librapidsnark-fr-fq.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		AB17EEEB5A15408182704669 /* test_prover */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A7B40D75BABC408CA2556D28 /* Build configuration list for PBXNativeTarget "test_prover" */;
-			buildPhases = (
-				47AEAE1AEB2E456BA53F8182 /* Sources */,
-				D57E555BFD3C449A8D9EC09D /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				532572F3EA63468C8F9E22E7 /* PBXTargetDependency */,
-				54DC855A038547D49AE5980A /* PBXTargetDependency */,
-				0A77AE00196A4EB3BFD1D840 /* PBXTargetDependency */,
-			);
-			name = test_prover;
-			productName = test_prover;
-			productReference = 9C137D8CD9E04DC7BC6D01B5 /* test_prover */;
-			productType = "com.apple.product-type.application";
-		};
-		E7B3E211803C411C8E5E6198 /* prover */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B06BA3C22FB44066BE96E39A /* Build configuration list for PBXNativeTarget "prover" */;
-			buildPhases = (
-				7DF92C8CD8CF45E28FC58074 /* Sources */,
-				4CA8D35E093540ACB7E9C7AF /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0751351CA2B045738DA1D258 /* PBXTargetDependency */,
-				56F9A13936984DEDAFE8D857 /* PBXTargetDependency */,
-				38C884E0A23D4922BD64A491 /* PBXTargetDependency */,
-				389F0BDF0D0F4A1D8B9453C1 /* PBXTargetDependency */,
-			);
-			name = prover;
-			productName = prover;
-			productReference = C8919BA6110845C3AC48AC08 /* prover.app */;
-			productType = "com.apple.product-type.application";
 		};
 		EFB3EB754F324F4BB75C071B /* fr */ = {
 			isa = PBXNativeTarget;
@@ -903,7 +539,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				02A50F93BAB849B0B5D8F1BD /* PBXTargetDependency */,
 			);
 			name = fr;
 			productName = fr;
@@ -930,84 +565,12 @@
 			projectDirPath = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark;
 			projectRoot = "";
 			targets = (
-				FBE078973FCF40F6AA9056E1 /* ALL_BUILD */,
-				A1CF90D2383141A59110C653 /* ZERO_CHECK */,
 				011D688AD7DB40D2BC817FF6 /* fq */,
 				EFB3EB754F324F4BB75C071B /* fr */,
-				FACBB098CEFB48C5AD9A0219 /* install */,
-				E7B3E211803C411C8E5E6198 /* prover */,
-				52C1715F2F0F471185049678 /* rapidsnark */,
 				A372A9B2334E41839417B22B /* rapidsnarkStatic */,
-				A9DBDA8A11A147E7AAC35487 /* rapidsnarkStaticFrFq */,
-				AB17EEEB5A15408182704669 /* test_prover */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0DEA58527DD020F944920F1B /* Generate CMakeFiles/ZERO_CHECK */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Generate CMakeFiles/ZERO_CHECK";
-			outputPaths = (
-				/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/CMakeFiles/ZERO_CHECK,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator\n  make -f /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator\n  make -f /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator\n  make -f /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator\n  make -f /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/CMakeScripts/ReRunCMake.make\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5A85E5500D247B94FFCA8CB5 /* Generate CMakeFiles/ALL_BUILD */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Generate CMakeFiles/ALL_BUILD";
-			outputPaths = (
-				/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/CMakeFiles/ALL_BUILD,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator\n  echo Build\\ all\\ projects\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake PostBuild Rules";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator\n  /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator\n  /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator\n  /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator\n  /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9E76A06266C1D9105DFE12A5 /* CMake PostBuild Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake PostBuild Rules";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src\n  /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E cmake_symlink_library /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src\n  /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E cmake_symlink_library /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src\n  /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E cmake_symlink_library /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src\n  /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E cmake_symlink_library /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18991D7F0E5746549095BDC9 /* Sources */ = {
@@ -1024,22 +587,6 @@
 				42907F2F25F04DBE9FF5DC05 /* prover.cpp in Sources */,
 				BE9E56C2ADE5448E9D401596 /* wtns_utils.cpp in Sources */,
 				1288E5D013B84D55AFF8EF50 /* zkey_utils.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		47AEAE1AEB2E456BA53F8182 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C7EFE627DBB94C60837D5326 /* test_prover.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7DF92C8CD8CF45E28FC58074 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				86647B6253EB42ECA814BF0F /* main_prover.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1063,188 +610,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF49C1FCABD64BDCAF6C3730 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4E001177C59D40FEB6039B4B /* fq.cpp in Sources */,
-				55E56184F35442BFA283EB06 /* fq_generic.cpp in Sources */,
-				3D0AF6527865459FA7428DC7 /* fq_raw_generic.cpp in Sources */,
-				86352099E67A4640803E8D60 /* fr.cpp in Sources */,
-				57C0737F04B4487D84FF7129 /* fr_generic.cpp in Sources */,
-				2AA11A2BF5224E01A2B22C6A /* fr_raw_generic.cpp in Sources */,
-				86FD0CD3697C48F2869B3AD9 /* alt_bn128.cpp in Sources */,
-				3CBAD506562C4751B5E95D91 /* misc.cpp in Sources */,
-				8A398E6C46F546C7AC1B8A2C /* naf.cpp in Sources */,
-				A5BBEF859456492BBBDC0B78 /* splitparstr.cpp in Sources */,
-				616FFF920A7F417583EF1137 /* binfile_utils.cpp in Sources */,
-				7257BB9971B442B0A545E526 /* fileloader.cpp in Sources */,
-				7E49E0A6398E4C43A4C149C9 /* logger.cpp in Sources */,
-				1FF325C1FAD34EE18113D848 /* prover.cpp in Sources */,
-				BB251D2B9D4949C080FE55CC /* wtns_utils.cpp in Sources */,
-				A175C9900F004D949FCC6D30 /* zkey_utils.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B523E54830EF48AE90B464AD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C57E3652812F474D93861FAA /* alt_bn128.cpp in Sources */,
-				968E209A048042E591F092A9 /* misc.cpp in Sources */,
-				ABA0B849404642C4B49B9BED /* naf.cpp in Sources */,
-				0CD2C6B74AE440F38C8B7802 /* splitparstr.cpp in Sources */,
-				33EBDA246A304B16949EA0FB /* binfile_utils.cpp in Sources */,
-				338EA7F6447845AF890B44D1 /* fileloader.cpp in Sources */,
-				F103F941851248908D8ADD06 /* logger.cpp in Sources */,
-				D7B98CB994284F9589F8E37C /* prover.cpp in Sources */,
-				D1390DBB046B4CC5882E9E44 /* wtns_utils.cpp in Sources */,
-				CBC47DC90B184D7F933025DC /* zkey_utils.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		02A50F93BAB849B0B5D8F1BD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1CF90D2383141A59110C653 /* ZERO_CHECK */;
-			targetProxy = 720C8459846542978424B46F /* PBXContainerItemProxy */;
-		};
-		0751351CA2B045738DA1D258 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EFB3EB754F324F4BB75C071B /* fr */;
-			targetProxy = CED330BEBB5C416994792E10 /* PBXContainerItemProxy */;
-		};
-		0A77AE00196A4EB3BFD1D840 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1CF90D2383141A59110C653 /* ZERO_CHECK */;
-			targetProxy = 0AB3FDFF041D4E7780594D8A /* PBXContainerItemProxy */;
-		};
-		13643D1162C44E44BC1AB805 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A9DBDA8A11A147E7AAC35487 /* rapidsnarkStaticFrFq */;
-			targetProxy = AD56AFCE7BDC4A88AAFF7C85 /* PBXContainerItemProxy */;
-		};
-		33F7934E903B49209374BBC4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AB17EEEB5A15408182704669 /* test_prover */;
-			targetProxy = FE6F91AF48774F9DB5B925A0 /* PBXContainerItemProxy */;
-		};
-		36C05151C6A84E4F83A4782B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1CF90D2383141A59110C653 /* ZERO_CHECK */;
-			targetProxy = 2C3CABA77DDB474886E7009B /* PBXContainerItemProxy */;
-		};
-		389F0BDF0D0F4A1D8B9453C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1CF90D2383141A59110C653 /* ZERO_CHECK */;
-			targetProxy = F8614332953F443BADD1187C /* PBXContainerItemProxy */;
-		};
-		38C884E0A23D4922BD64A491 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A372A9B2334E41839417B22B /* rapidsnarkStatic */;
-			targetProxy = CA187631679A4A1B9D2734B4 /* PBXContainerItemProxy */;
-		};
 		3964AA1A9B7E40AAAF982EB4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EFB3EB754F324F4BB75C071B /* fr */;
 			targetProxy = 125425BAE6C94974B66C0F57 /* PBXContainerItemProxy */;
-		};
-		3B8AFFDB2B2E4A1583C5220F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1CF90D2383141A59110C653 /* ZERO_CHECK */;
-			targetProxy = 1BD3885912244516A057C206 /* PBXContainerItemProxy */;
-		};
-		513EC6091AE4473E8400A87F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EFB3EB754F324F4BB75C071B /* fr */;
-			targetProxy = 4B3AA423605649D3B874949D /* PBXContainerItemProxy */;
-		};
-		532572F3EA63468C8F9E22E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EFB3EB754F324F4BB75C071B /* fr */;
-			targetProxy = 4F3388CDDC054AA886D809FA /* PBXContainerItemProxy */;
-		};
-		54DC855A038547D49AE5980A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 011D688AD7DB40D2BC817FF6 /* fq */;
-			targetProxy = 8A6B8E21C78B436C83C902D8 /* PBXContainerItemProxy */;
-		};
-		56F9A13936984DEDAFE8D857 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 011D688AD7DB40D2BC817FF6 /* fq */;
-			targetProxy = DF2D3AAB368244ABB3732A0C /* PBXContainerItemProxy */;
 		};
 		58B38F121C304CFEB50546C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 011D688AD7DB40D2BC817FF6 /* fq */;
 			targetProxy = 4961FC7374CC403FB6D182B4 /* PBXContainerItemProxy */;
 		};
-		64D11209B6534F209FDC97E6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EFB3EB754F324F4BB75C071B /* fr */;
-			targetProxy = 94A71AABC52D45ADA702EBFE /* PBXContainerItemProxy */;
-		};
-		7CDCBA6ECF434048B94C018E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 011D688AD7DB40D2BC817FF6 /* fq */;
-			targetProxy = 24D912B65E2B478AB2EB3B1B /* PBXContainerItemProxy */;
-		};
-		83FE6A0532A54FD088E0F2C5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 011D688AD7DB40D2BC817FF6 /* fq */;
-			targetProxy = C46B129F9426471691B7B29C /* PBXContainerItemProxy */;
-		};
-		8E8711C3E3EC4CD28A91BC4E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EFB3EB754F324F4BB75C071B /* fr */;
-			targetProxy = CBD8F78DB85F488288BD64BE /* PBXContainerItemProxy */;
-		};
 		9134B4E703C341B19BF95D63 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EFB3EB754F324F4BB75C071B /* fr */;
 			targetProxy = 35A03BE87C5649EB9A209861 /* PBXContainerItemProxy */;
-		};
-		95FB7323977E42B3B6044F8C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 52C1715F2F0F471185049678 /* rapidsnark */;
-			targetProxy = 48FA451D5764407DBD2C36A1 /* PBXContainerItemProxy */;
-		};
-		9CA1693CB0144634ACD9E72A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1CF90D2383141A59110C653 /* ZERO_CHECK */;
-			targetProxy = 0C7E650EC7D949518A4F85DC /* PBXContainerItemProxy */;
-		};
-		A1D3FB8AE60F48B1ACF5E696 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1CF90D2383141A59110C653 /* ZERO_CHECK */;
-			targetProxy = D169920E6DAE4DF18F6ECDF3 /* PBXContainerItemProxy */;
-		};
-		B22EDA61FC314009B8014FD3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1CF90D2383141A59110C653 /* ZERO_CHECK */;
-			targetProxy = 75F06D7A6E974BB695169A9E /* PBXContainerItemProxy */;
-		};
-		C46A6F48BF084BF3B43F176D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FBE078973FCF40F6AA9056E1 /* ALL_BUILD */;
-			targetProxy = 7A8FF927A229416C90CCFFFB /* PBXContainerItemProxy */;
-		};
-		C5F2BBDEC33F4EDF9827570D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 011D688AD7DB40D2BC817FF6 /* fq */;
-			targetProxy = C590CB1BEFC546E2ABF6CF44 /* PBXContainerItemProxy */;
-		};
-		DAC349CCBAB447098F7FC7B5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A372A9B2334E41839417B22B /* rapidsnarkStatic */;
-			targetProxy = 4A2C3545B27E42358F9E14B3 /* PBXContainerItemProxy */;
-		};
-		FD29358F64D045199DBD438A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E7B3E211803C411C8E5E6198 /* prover */;
-			targetProxy = 0B0FB1E5EAD848D28CAE79A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1334,107 +716,6 @@
 				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Release;
-		};
-		1765F851D1C44CF7A2D5128E /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " $(inherited)";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = RelWithDebInfo;
-		};
-		17B42AB803394F32BD095B5B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " $(inherited)";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Debug;
-		};
-		1E053105F50D49839EC3B1AD /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
-				DYLIB_COMPATIBILITY_VERSION = "";
-				DYLIB_CURRENT_VERSION = "";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .dylib;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					rapidsnark_EXPORTS,
-					_LONG_LONG_LIMB,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
-					"$(inherited)",
-				);
-				INSTALL_PATH = "@rpath";
-				LIBRARY_STYLE = DYNAMIC;
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu++11'",
-					"-fPIC",
-				);
-				OTHER_LDFLAGS = (
-					"-dynamiclib",
-					"-Wl,-headerpad_max_install_names",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"$(inherited)",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = rapidsnark;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/rapidsnark.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = MinSizeRel;
 		};
 		2AA845783CD6466583996D39 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
@@ -1574,30 +855,6 @@
 			};
 			name = MinSizeRel;
 		};
-		3CF1BCB70E4F445DAB877F7C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " $(inherited)";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Debug;
-		};
 		4DD999E161B24761AA047A9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1635,199 +892,6 @@
 				PRODUCT_NAME = fr;
 				SECTORDER_FLAGS = "";
 				TARGET_TEMP_DIR = "$(SRCROOT)/build_prover_ios_simulator/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Debug;
-		};
-		4E48E5A4295B4FA18990DC76 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " $(inherited)";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = MinSizeRel;
-		};
-		503462BA4EA5477FBFC862E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " $(inherited)";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Release;
-		};
-		5114F9541EC741D09C56BDE8 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					_LONG_LONG_LIMB,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/CMakeFiles/test_prover.dir/Info.plist;
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu++11'",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-headerpad_max_install_names",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"$(inherited)",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = test_prover;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/test_prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = RelWithDebInfo;
-		};
-		5258BB1FDC524BCCB4097B40 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					_LONG_LONG_LIMB,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/CMakeFiles/test_prover.dir/Info.plist;
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu++11'",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-headerpad_max_install_names",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"$(inherited)",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = test_prover;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/test_prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = MinSizeRel;
-		};
-		58964A22AB944433A3128D15 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					_LONG_LONG_LIMB,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/CMakeFiles/prover.dir/Info.plist;
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11' ";
-				OTHER_LDFLAGS = (
-					"-Wl,-headerpad_max_install_names",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/librapidsnark.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"$(inherited)",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = prover;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "$(SRCROOT)/build_prover_ios_simulator/build/prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1873,57 +937,6 @@
 				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = MinSizeRel;
-		};
-		63CCB66DE32B4AA78309E14A /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					_LONG_LONG_LIMB,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/CMakeFiles/prover.dir/Info.plist;
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu++11'",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-headerpad_max_install_names",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/librapidsnark.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"$(inherited)",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = prover;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "$(SRCROOT)/build_prover_ios_simulator/build/prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = RelWithDebInfo;
 		};
 		65800FE9F8144CE49B09D8EC /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
@@ -2009,72 +1022,6 @@
 			};
 			name = RelWithDebInfo;
 		};
-		785BC55BCA2F4CF2A8FC9EC9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					_LONG_LONG_LIMB,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
-					"$(inherited)",
-				);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu++11'",
-					"-fPIC",
-				);
-				OTHER_LIBTOOLFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "rapidsnark-fr-fq";
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/rapidsnarkStaticFrFq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Release;
-		};
-		7BE0631FE53F4E3688AB9977 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " $(inherited)";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = MinSizeRel;
-		};
 		82920F4C78864D02B303A1CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2082,301 +1029,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
-			};
-			name = Release;
-		};
-		83333CED748F425EA236F170 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " $(inherited)";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Release;
-		};
-		85D4FB6BA88A43AC99108B95 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					_LONG_LONG_LIMB,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/CMakeFiles/test_prover.dir/Info.plist;
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11' ";
-				OTHER_LDFLAGS = (
-					"-Wl,-headerpad_max_install_names",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"$(inherited)",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = test_prover;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/test_prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Debug;
-		};
-		9160A7F42FC04AD3BC7F68FB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " $(inherited)";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Release;
-		};
-		9439F3170FA042019A1445F0 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					_LONG_LONG_LIMB,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/CMakeFiles/prover.dir/Info.plist;
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu++11'",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-headerpad_max_install_names",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/librapidsnark.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"$(inherited)",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = prover;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "$(SRCROOT)/build_prover_ios_simulator/build/prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = MinSizeRel;
-		};
-		97F667CD03914830B269941A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}";
-				DYLIB_COMPATIBILITY_VERSION = "";
-				DYLIB_CURRENT_VERSION = "";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .dylib;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					rapidsnark_EXPORTS,
-					_LONG_LONG_LIMB,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
-					"$(inherited)",
-				);
-				INSTALL_PATH = "@rpath";
-				LIBRARY_STYLE = DYNAMIC;
-				OTHER_CPLUSPLUSFLAGS = (
-					"'-std=gnu++11'",
-					"-fPIC",
-				);
-				OTHER_LDFLAGS = (
-					"-dynamiclib",
-					"-Wl,-headerpad_max_install_names",
-					"${SRCROOT}/depends/gmp/package_ios_arm64/lib/libgmp.a",
-					"${SRCROOT}/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					"${SRCROOT}/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"${SRCROOT}/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					"${SRCROOT}/depends/gmp/package_ios_arm64/lib/libgmp.a",
-					"$(inherited)",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = rapidsnark;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/rapidsnark.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Debug;
-		};
-		9852AF9FF74B4819A9618F19 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " $(inherited)";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = RelWithDebInfo;
-		};
-		9BD775920F014C4F9199226D /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " $(inherited)";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = MinSizeRel;
-		};
-		9E69E99D19964F20924E4D9E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					_LONG_LONG_LIMB,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/CMakeFiles/prover.dir/Info.plist;
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu++11'",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-headerpad_max_install_names",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}/librapidsnark.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"$(inherited)",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = prover;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "${SRCROOT}/build_prover_ios_simulator/build/prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Release;
 		};
@@ -2461,228 +1113,12 @@
 			};
 			name = Debug;
 		};
-		AE355832BF49417E9AF98765 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
-				DYLIB_COMPATIBILITY_VERSION = "";
-				DYLIB_CURRENT_VERSION = "";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .dylib;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					rapidsnark_EXPORTS,
-					_LONG_LONG_LIMB,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
-					"$(inherited)",
-				);
-				INSTALL_PATH = "@rpath";
-				LIBRARY_STYLE = DYNAMIC;
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu++11'",
-					"-fPIC",
-				);
-				OTHER_LDFLAGS = (
-					"-dynamiclib",
-					"-Wl,-headerpad_max_install_names",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"$(inherited)",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = rapidsnark;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/rapidsnark.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = RelWithDebInfo;
-		};
-		B1A6DA4B45014F2B876EBDFD /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					_LONG_LONG_LIMB,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
-					"$(inherited)",
-				);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu++11'",
-					"-fPIC",
-				);
-				OTHER_LIBTOOLFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "rapidsnark-fr-fq";
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/rapidsnarkStaticFrFq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = RelWithDebInfo;
-		};
-		C9848AF2219D4536AEF3E543 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}";
-				DYLIB_COMPATIBILITY_VERSION = "";
-				DYLIB_CURRENT_VERSION = "";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .dylib;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					rapidsnark_EXPORTS,
-					_LONG_LONG_LIMB,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
-					"$(inherited)",
-				);
-				INSTALL_PATH = "@rpath";
-				LIBRARY_STYLE = DYNAMIC;
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu++11'",
-					"-fPIC",
-				);
-				OTHER_LDFLAGS = (
-					"-dynamiclib",
-					"-Wl,-headerpad_max_install_names",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"$(inherited)",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = rapidsnark;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/rapidsnark.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Release;
-		};
-		CDD3BDEE6F0647AD9F94D6B5 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					_LONG_LONG_LIMB,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
-					"$(inherited)",
-				);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu++11'",
-					"-fPIC",
-				);
-				OTHER_LIBTOOLFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "rapidsnark-fr-fq";
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/rapidsnarkStaticFrFq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = MinSizeRel;
-		};
 		CE78FBCF128D4A5B86253A83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
-			};
-			name = Debug;
-		};
-		DC436D92A76D4B13A40C8E30 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " $(inherited)";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Debug;
 		};
@@ -2695,47 +1131,6 @@
 				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
 			};
 			name = RelWithDebInfo;
-		};
-		DF2259F791D8441BB639C116 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					_LONG_LONG_LIMB,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
-					"$(inherited)",
-				);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = (
-					"'-std=gnu++11'",
-					"-fPIC",
-				);
-				OTHER_LIBTOOLFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "rapidsnark-fr-fq";
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/rapidsnarkStaticFrFq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Debug;
 		};
 		E09C32457A214AE990D6D3FE /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2778,93 +1173,9 @@
 			};
 			name = Release;
 		};
-		E0E81F235D5741B79909BBF2 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " $(inherited)";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = RelWithDebInfo;
-		};
-		E913A6F3E0F54DCC84ECB943 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					_LONG_LONG_LIMB,
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/CMakeFiles/test_prover.dir/Info.plist;
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=gnu++11'",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-headerpad_max_install_names",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"$(inherited)",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = test_prover;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/test_prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A6B8329A11C438686FBF3CA /* Build configuration list for PBXNativeTarget "rapidsnark" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				97F667CD03914830B269941A /* Debug */,
-				C9848AF2219D4536AEF3E543 /* Release */,
-				1E053105F50D49839EC3B1AD /* MinSizeRel */,
-				AE355832BF49417E9AF98765 /* RelWithDebInfo */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		2099572914164B45A7D5DB2A /* Build configuration list for PBXNativeTarget "rapidsnarkStatic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2883,72 +1194,6 @@
 				82920F4C78864D02B303A1CD /* Release */,
 				2AA845783CD6466583996D39 /* MinSizeRel */,
 				DDFCA31F8B5E40E8BF8D98AD /* RelWithDebInfo */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		4013BFDF0F054C7EB337AB11 /* Build configuration list for PBXNativeTarget "rapidsnarkStaticFrFq" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DF2259F791D8441BB639C116 /* Debug */,
-				785BC55BCA2F4CF2A8FC9EC9 /* Release */,
-				CDD3BDEE6F0647AD9F94D6B5 /* MinSizeRel */,
-				B1A6DA4B45014F2B876EBDFD /* RelWithDebInfo */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		4D391F6BC3714366B8090273 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3CF1BCB70E4F445DAB877F7C /* Debug */,
-				83333CED748F425EA236F170 /* Release */,
-				7BE0631FE53F4E3688AB9977 /* MinSizeRel */,
-				1765F851D1C44CF7A2D5128E /* RelWithDebInfo */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		A7B40D75BABC408CA2556D28 /* Build configuration list for PBXNativeTarget "test_prover" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				85D4FB6BA88A43AC99108B95 /* Debug */,
-				E913A6F3E0F54DCC84ECB943 /* Release */,
-				5258BB1FDC524BCCB4097B40 /* MinSizeRel */,
-				5114F9541EC741D09C56BDE8 /* RelWithDebInfo */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		A8C98D9E140A49AB910B296A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC436D92A76D4B13A40C8E30 /* Debug */,
-				9160A7F42FC04AD3BC7F68FB /* Release */,
-				4E48E5A4295B4FA18990DC76 /* MinSizeRel */,
-				E0E81F235D5741B79909BBF2 /* RelWithDebInfo */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		B06BA3C22FB44066BE96E39A /* Build configuration list for PBXNativeTarget "prover" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				58964A22AB944433A3128D15 /* Debug */,
-				9E69E99D19964F20924E4D9E /* Release */,
-				9439F3170FA042019A1445F0 /* MinSizeRel */,
-				63CCB66DE32B4AA78309E14A /* RelWithDebInfo */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		CF5D5062AFF14C61B8F67B2F /* Build configuration list for PBXAggregateTarget "install" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				17B42AB803394F32BD095B5B /* Debug */,
-				503462BA4EA5477FBFC862E2 /* Release */,
-				9BD775920F014C4F9199226D /* MinSizeRel */,
-				9852AF9FF74B4819A9618F19 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

@@ -79,3 +79,5 @@ build/fr_asm.o
 .idea/
 libs
 output
+xcframework/Frameworks/rapidsnark.xcframework/ios-arm64/librapidsnark.a
+xcframework/Frameworks/rapidsnark.xcframework/ios-arm64_x86_64-simulator/librapidsnark.a
