@@ -366,7 +366,7 @@
 		B88516C4DD98464FBF9BAC5B /* fileloader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fileloader.cpp; path = src/fileloader.cpp; sourceTree = SOURCE_ROOT; };
 		C27F82CEFC64439F935B0740 /* wtns_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wtns_utils.cpp; path = src/wtns_utils.cpp; sourceTree = SOURCE_ROOT; };
 		C399F00A169D4FF5B5367BDB /* alt_bn128.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = alt_bn128.cpp; path = depends/ffiasm/c/alt_bn128.cpp; sourceTree = SOURCE_ROOT; };
-		C8919BA6110845C3AC48AC08 /* prover */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; name = prover; path = prover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8919BA6110845C3AC48AC08 /* prover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = prover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB7D302247A44A3A07A88F3 /* fr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = fr.hpp; path = build/fr.hpp; sourceTree = SOURCE_ROOT; };
 		CEDA0D5CBC834F6ABB0FFAC5 /* librapidsnark-fr-fq.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "librapidsnark-fr-fq.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF55C1CCD524F2EA3128BDB /* wtns_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wtns_utils.cpp; path = src/wtns_utils.cpp; sourceTree = SOURCE_ROOT; };
@@ -720,7 +720,7 @@
 			children = (
 				59D02DBC41474764997421C5 /* libfq.a */,
 				92C4FA9E2D8B418B8EA83E0C /* libfr.a */,
-				C8919BA6110845C3AC48AC08 /* prover */,
+				C8919BA6110845C3AC48AC08 /* prover.app */,
 				036C2F944AF44E4CBA84FAC4 /* librapidsnark.dylib */,
 				3F65B8C1D05D467DA5184B4B /* librapidsnark.a */,
 				CEDA0D5CBC834F6ABB0FFAC5 /* librapidsnark-fr-fq.a */,
@@ -890,7 +890,7 @@
 			);
 			name = prover;
 			productName = prover;
-			productReference = C8919BA6110845C3AC48AC08 /* prover */;
+			productReference = C8919BA6110845C3AC48AC08 /* prover.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EFB3EB754F324F4BB75C071B /* fr */ = {
@@ -1254,7 +1254,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}";
 				EXCLUDED_ARCHS = "";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
@@ -1268,11 +1268,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"${SRCROOT}/depends/gmp/package_ios_arm64/include",
+					"${SRCROOT}/src/../src",
+					"${SRCROOT}/src/../build",
+					"${SRCROOT}/src/../depends/ffiasm/c",
+					"${SRCROOT}/src/../depends/json/single_include",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -1286,7 +1286,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = fr;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "$(SRCROOT)/build_prover_ios_simulator/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1297,7 +1297,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}";
+				CONFIGURATION_BUILD_DIR = "${SRCROOT}/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -1310,11 +1310,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"${SRCROOT}/depends/gmp/package_ios_arm64/include",
+					"${SRCROOT}/src/../src",
+					"${SRCROOT}/src/../build",
+					"${SRCROOT}/src/../depends/ffiasm/c",
+					"${SRCROOT}/src/../depends/json/single_include",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -1328,7 +1328,8 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = fq;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/fq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
+				TARGET_TEMP_DIR = "${SRCROOT}/build_prover_ios_simulator/build/fq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1352,6 +1353,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
+				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1440,7 +1442,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build;
+				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
 			};
 			name = MinSizeRel;
 		};
@@ -1449,7 +1451,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}";
+				CONFIGURATION_BUILD_DIR = "${SRCROOT}/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1462,11 +1464,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"${SRCROOT}/depends/gmp/package_ios_arm64/include",
+					"${SRCROOT}/src/../src",
+					"${SRCROOT}/src/../build",
+					"${SRCROOT}/src/../depends/ffiasm/c",
+					"${SRCROOT}/src/../depends/json/single_include",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -1479,7 +1481,8 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = fq;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/fq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
+				TARGET_TEMP_DIR = "${SRCROOT}/build_prover_ios_simulator/build/fq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1490,7 +1493,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
 				EXCLUDED_ARCHS = "";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
@@ -1504,11 +1507,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"${SRCROOT}/depends/gmp/package_ios_arm64/include",
+					"${SRCROOT}/src/../src",
+					"${SRCROOT}/src/../build",
+					"${SRCROOT}/src/../depends/ffiasm/c",
+					"${SRCROOT}/src/../depends/json/single_include",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -1522,7 +1525,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = fr;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "$(SRCROOT)/build_prover_ios_simulator/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1533,7 +1536,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				CONFIGURATION_BUILD_DIR = "${SRCROOT}/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -1546,11 +1549,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"${SRCROOT}/depends/gmp/package_ios_arm64/include",
+					"${SRCROOT}/src/../src",
+					"${SRCROOT}/src/../build",
+					"${SRCROOT}/src/../depends/ffiasm/c",
+					"${SRCROOT}/src/../depends/json/single_include",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -1564,7 +1567,8 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = fq;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/fq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
+				TARGET_TEMP_DIR = "${SRCROOT}/build_prover_ios_simulator/build/fq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1588,6 +1592,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
+				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1598,7 +1603,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}";
 				EXCLUDED_ARCHS = "";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
@@ -1612,11 +1617,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"${SRCROOT}/depends/gmp/package_ios_arm64/include",
+					"${SRCROOT}/src/../src",
+					"${SRCROOT}/src/../build",
+					"${SRCROOT}/src/../depends/ffiasm/c",
+					"${SRCROOT}/src/../depends/json/single_include",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -1629,7 +1634,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = fr;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "$(SRCROOT)/build_prover_ios_simulator/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1653,6 +1658,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
+				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1784,7 +1790,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}";
 				EXECUTABLE_PREFIX = "";
 				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1821,7 +1827,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = prover;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "$(SRCROOT)/build_prover_ios_simulator/build/prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1845,11 +1851,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"${SRCROOT}/depends/gmp/package_ios_arm64/include",
+					"${SRCROOT}/src/../src",
+					"${SRCROOT}/src/../build",
+					"${SRCROOT}/src/../depends/ffiasm/c",
+					"${SRCROOT}/src/../depends/json/single_include",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -1862,7 +1868,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = rapidsnark;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/rapidsnarkStatic.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "${SRCROOT}/build_prover_ios_simulator/build/rapidsnarkStatic.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1873,7 +1879,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
 				EXECUTABLE_PREFIX = "";
 				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1913,7 +1919,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = prover;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "$(SRCROOT)/build_prover_ios_simulator/build/prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1937,11 +1943,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"${SRCROOT}/depends/gmp/package_ios_arm64/include",
+					"${SRCROOT}/src/../src",
+					"${SRCROOT}/src/../build",
+					"${SRCROOT}/src/../depends/ffiasm/c",
+					"${SRCROOT}/src/../depends/json/single_include",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -1954,7 +1960,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = rapidsnark;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/rapidsnarkStatic.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "${SRCROOT}/build_prover_ios_simulator/build/rapidsnarkStatic.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1965,7 +1971,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
 				EXCLUDED_ARCHS = "";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
@@ -1979,11 +1985,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"${SRCROOT}/depends/gmp/package_ios_arm64/include",
+					"${SRCROOT}/src/../src",
+					"${SRCROOT}/src/../build",
+					"${SRCROOT}/src/../depends/ffiasm/c",
+					"${SRCROOT}/src/../depends/json/single_include",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -1997,7 +2003,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = fr;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "$(SRCROOT)/build_prover_ios_simulator/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2063,6 +2069,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
+				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2074,7 +2081,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build;
+				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
 			};
 			name = Release;
 		};
@@ -2096,6 +2103,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
+				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2165,6 +2173,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
+				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2175,7 +2184,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build_prover_ios_simulator/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
 				EXECUTABLE_PREFIX = "";
 				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -2215,7 +2224,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = prover;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "$(SRCROOT)/build_prover_ios_simulator/build/prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2258,11 +2267,11 @@
 				OTHER_LDFLAGS = (
 					"-dynamiclib",
 					"-Wl,-headerpad_max_install_names",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfq.a",
-					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfr.a",
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"${SRCROOT}/depends/gmp/package_ios_arm64/lib/libgmp.a",
+					"${SRCROOT}/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					"${SRCROOT}/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"${SRCROOT}/build_prover_ios_simulator/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					"${SRCROOT}/depends/gmp/package_ios_arm64/lib/libgmp.a",
 					"$(inherited)",
 				);
 				OTHER_REZFLAGS = "";
@@ -2325,7 +2334,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build_prover_ios_simulator/src/Release${EFFECTIVE_PLATFORM_NAME}";
 				EXECUTABLE_PREFIX = "";
 				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -2365,7 +2374,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = prover;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "${SRCROOT}/build_prover_ios_simulator/build/prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2376,7 +2385,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				CONFIGURATION_BUILD_DIR = "${SRCROOT}/build_prover_ios_simulator/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -2389,11 +2398,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"${SRCROOT}/depends/gmp/package_ios_arm64/include",
+					"${SRCROOT}/src/../src",
+					"${SRCROOT}/src/../build",
+					"${SRCROOT}/src/../depends/ffiasm/c",
+					"${SRCROOT}/src/../depends/json/single_include",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -2407,7 +2416,8 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = fq;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/fq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
+				TARGET_TEMP_DIR = "${SRCROOT}/build_prover_ios_simulator/build/fq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2431,11 +2441,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"${SRCROOT}/depends/gmp/package_ios_arm64/include",
+					"${SRCROOT}/src/../src",
+					"${SRCROOT}/src/../build",
+					"${SRCROOT}/src/../depends/ffiasm/c",
+					"${SRCROOT}/src/../depends/json/single_include",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -2445,7 +2455,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = rapidsnark;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/rapidsnarkStatic.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "${SRCROOT}/build_prover_ios_simulator/build/rapidsnarkStatic.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2648,7 +2658,7 @@
 			buildSettings = {
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SYMROOT = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build;
+				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
 			};
 			name = Debug;
 		};
@@ -2670,6 +2680,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
+				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2681,7 +2692,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build;
+				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
 			};
 			name = RelWithDebInfo;
 		};
@@ -2744,11 +2755,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
-					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"${SRCROOT}/depends/gmp/package_ios_arm64/include",
+					"${SRCROOT}/src/../src",
+					"${SRCROOT}/src/../build",
+					"${SRCROOT}/src/../depends/ffiasm/c",
+					"${SRCROOT}/src/../depends/json/single_include",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -2761,7 +2772,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = rapidsnark;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/build_prover_ios_simulator/build/rapidsnarkStatic.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "${SRCROOT}/build_prover_ios_simulator/build/rapidsnarkStatic.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -2785,6 +2796,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
+				SYMROOT = "${SRCROOT}/build_prover_ios_simulator/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
