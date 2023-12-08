@@ -562,7 +562,7 @@
 				Base,
 			);
 			mainGroup = 90196E03B74B4B04AB0883F0;
-			projectDirPath = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark;
+			projectDirPath = "..";
 			projectRoot = "";
 			targets = (
 				011D688AD7DB40D2BC817FF6 /* fq */,
