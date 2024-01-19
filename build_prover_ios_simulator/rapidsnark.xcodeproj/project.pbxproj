@@ -111,6 +111,7 @@
 		AD6E0DF8DB0544E38E5604D5 /* logger.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = logger.cpp; path = src/logger.cpp; sourceTree = SOURCE_ROOT; };
 		AEE6E2EB0B0440E5B120BD8F /* prover.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = prover.cpp; path = src/prover.cpp; sourceTree = SOURCE_ROOT; };
 		AF58AAC38A694303B2E6F247 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = build_prover_ios_simulator/src/CMakeFiles/rapidsnarkStatic.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		B1DE1F8E2B5A9E7100AA06CD /* OpenMP.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = OpenMP.xcframework; sourceTree = "<group>"; };
 		B2927EA8A5D04563ADA2F645 /* fq_raw_generic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fq_raw_generic.cpp; path = build/fq_raw_generic.cpp; sourceTree = SOURCE_ROOT; };
 		B8157D10C2674C16A802C6F4 /* fr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fr.cpp; path = build/fr.cpp; sourceTree = SOURCE_ROOT; };
 		B88516C4DD98464FBF9BAC5B /* fileloader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fileloader.cpp; path = src/fileloader.cpp; sourceTree = SOURCE_ROOT; };
@@ -386,6 +387,7 @@
 		90196E03B74B4B04AB0883F0 = {
 			isa = PBXGroup;
 			children = (
+				B1DE1F8E2B5A9E7100AA06CD /* OpenMP.xcframework */,
 				3E1439E292F144C0BBF93142 /* ALL_BUILD */,
 				478ACBC93F9348F2BABCB896 /* fr */,
 				870120C4D7A44C52A61521FE /* fq */,
@@ -562,7 +564,7 @@
 				Base,
 			);
 			mainGroup = 90196E03B74B4B04AB0883F0;
-			projectDirPath = "..";
+			projectDirPath = ..;
 			projectRoot = "";
 			targets = (
 				011D688AD7DB40D2BC817FF6 /* fq */,
@@ -912,6 +914,7 @@
 					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
 					_LONG_LONG_LIMB,
 					"$(inherited)",
+					USE_OPENMP,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
@@ -921,6 +924,7 @@
 					"${SRCROOT}/src/../depends/ffiasm/c",
 					"${SRCROOT}/src/../depends/json/single_include",
 					"$(inherited)",
+					"${SRCROOT}/OpenMP.xcframework/ios-arm64_arm64e/OpenMP.framework/Versions/A/Headers",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -953,6 +957,7 @@
 					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
 					_LONG_LONG_LIMB,
 					"$(inherited)",
+					USE_OPENMP,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
@@ -962,6 +967,7 @@
 					"${SRCROOT}/src/../depends/ffiasm/c",
 					"${SRCROOT}/src/../depends/json/single_include",
 					"$(inherited)",
+					"${SRCROOT}/OpenMP.xcframework/ios-arm64_arm64e/OpenMP.framework/Versions/A/Headers",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -1090,6 +1096,7 @@
 					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
 					_LONG_LONG_LIMB,
 					"$(inherited)",
+					USE_OPENMP,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
@@ -1099,6 +1106,7 @@
 					"${SRCROOT}/src/../depends/ffiasm/c",
 					"${SRCROOT}/src/../depends/json/single_include",
 					"$(inherited)",
+					"${SRCROOT}/OpenMP.xcframework/ios-arm64_arm64e/OpenMP.framework/Versions/A/Headers",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -1147,6 +1155,7 @@
 					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
 					_LONG_LONG_LIMB,
 					"$(inherited)",
+					USE_OPENMP,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
@@ -1156,6 +1165,7 @@
 					"${SRCROOT}/src/../depends/ffiasm/c",
 					"${SRCROOT}/src/../depends/json/single_include",
 					"$(inherited)",
+					"${SRCROOT}/OpenMP.xcframework/ios-arm64_arm64e/OpenMP.framework/Versions/A/Headers",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;

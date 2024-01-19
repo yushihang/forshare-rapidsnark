@@ -1,7 +1,8 @@
 #include "random_generator.hpp"
 #include "logging.hpp"
 #include <future>
-
+#define USE_OPENMP
+#define _OPENMP 201811
 namespace Groth16 {
 
 template <typename Engine>
@@ -45,6 +46,7 @@ std::unique_ptr<Prover<Engine>> makeProver(
 
 template <typename Engine>
 std::unique_ptr<Proof<Engine>> Prover<Engine>::prove(typename Engine::FrElement *wtns) {
+
 
 #ifdef USE_OPENMP
     LOG_TRACE("Start Multiexp A");

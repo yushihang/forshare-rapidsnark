@@ -1,9 +1,11 @@
 #include <thread>
 #include <vector>
+#define USE_OPENMP
+
 #ifdef USE_OPENMP
 #include <omp.h>
 #endif
-
+#define _OPENMP 201811
 using namespace std;
 
 // The function we want to execute on the new thread.
