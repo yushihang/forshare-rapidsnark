@@ -1,8 +1,10 @@
-#define USE_OPENMP
+
+
 #ifdef USE_OPENMP
 #include <omp.h>
 #endif
-#define _OPENMP 201811
+
+
 #include <memory.h>
 #include "misc.hpp"
 #include "multiexp.hpp"

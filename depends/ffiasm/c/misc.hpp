@@ -6,7 +6,7 @@
 #include <omp.h>
 #endif
 #include <cstdint>
-#define _OPENMP 201811
+
 uint32_t log2 (uint32_t value);
 
 #ifdef _OPENMP

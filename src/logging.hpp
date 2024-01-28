@@ -1,6 +1,7 @@
 #ifndef LOGGING_HPP
 #define LOGGING_HPP
 
+#define USE_LOGGER
 #ifdef USE_LOGGER
 
 #include "logger.hpp"

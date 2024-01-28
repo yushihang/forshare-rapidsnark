@@ -1,0 +1,3125 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2F7477A3AD6D47DB8202B2CC /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0252D9FDA3574789828DDDE2 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				F8CA0890B823ED53E77976C8 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				1E3F3BF646B14CF4831467DF /* PBXTargetDependency */,
+				D95FAD5922034988BA037AD8 /* PBXTargetDependency */,
+				8ACA660E967D432B93DBC374 /* PBXTargetDependency */,
+				85F8318F9C0647F18FCB1444 /* PBXTargetDependency */,
+				33FCF6E2B83A44DCACC8B9C7 /* PBXTargetDependency */,
+				BDCD9FB34B494023A7F61E98 /* PBXTargetDependency */,
+				0267DE18F3924E81A849963C /* PBXTargetDependency */,
+				C7DE2C2C5BCC45F68AA6C271 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		6119D9CD36AD440BA74A4D8B /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EAC96B55A1934BD6AB456EF0 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				242FC21B12328D0E382B0D5C /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		BD11A8DE7D1D42ADAE81361E /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0169962614FF4AC5A9C001DB /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				C6B643A1D6F44450BA257AD8 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		01F0871C678645C687FC39B5 /* zkey_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E8656916E52478DB9CEF04C /* zkey_utils.cpp */; };
+		0499E6AE95A04D73B9E79158 /* misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E20C0DCDE3D47F6861092E5 /* misc.cpp */; };
+		0E11BD24AE2949A9B122B0E3 /* zkey_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B2E92BA6D94687AA5B58AA /* zkey_utils.cpp */; };
+		1A9AD3B9DF3B49D3A659AC59 /* fr_generic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99CBDE37378444ED92D35510 /* fr_generic.cpp */; };
+		1B79AE0C729A4862851C8427 /* prover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26A7347798CB4967AA9E130F /* prover.cpp */; };
+		22D6C11C328A49AE90458482 /* wtns_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 319825AF2B1D4D3A9C0BC2F7 /* wtns_utils.cpp */; };
+		2D5F5457F27044D4ABA6FA5C /* fq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E28D5080465842C5B6B530A5 /* fq.cpp */; };
+		2D66B61C49F04C0EB94EA4E3 /* binfile_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF7213BA4D904EC98CF2A1DA /* binfile_utils.cpp */; };
+		2DE3E0FADFCE4B1CB712E50E /* fq_raw_arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = A7A27299E4F74412A2C8069B /* fq_raw_arm64.s */; };
+		3477048C15CE4E06AC5C4DE6 /* test_prover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21B1E8F6AF3B4286B23B1507 /* test_prover.cpp */; };
+		355A25FBFD8844B8ABEFD957 /* fq_raw_arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = EA755229E3EA4EAB97BB9883 /* fq_raw_arm64.s */; };
+		3713CAA2032F4626BE02FDEE /* fr_raw_arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = CE81973C285A47DC943B076F /* fr_raw_arm64.s */; };
+		41F58DE1C7E049E2A349C130 /* wtns_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9098448C5C844CCDBC16A5ED /* wtns_utils.cpp */; };
+		47EE5A2D595E43E0BD44A1AD /* naf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C57DA03CB3444CE18DBDFEFD /* naf.cpp */; };
+		4AFA86D7CFA54EA89F7DFC83 /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A1B9D24C14F9C884030AF /* logger.cpp */; };
+		628E8E2C422D4A3CAB7CF65B /* splitparstr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7C6BA3F74E2A88D32A1B /* splitparstr.cpp */; };
+		64939EA5F53543309EE83E4D /* alt_bn128.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 300A6DB97EDC4637A91F2E48 /* alt_bn128.cpp */; };
+		6A15BACE7EEB4EDC877EAA6B /* alt_bn128.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0FEC66895B44AA2BEE4F563 /* alt_bn128.cpp */; };
+		6B8AD934B5024E48B677ABF0 /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F61E1FFD64B449FD8276A3D9 /* logger.cpp */; };
+		6F3FDEA8B46B44148A82A204 /* fr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E281F99CCF46405486309843 /* fr.cpp */; };
+		7AFA1DD7DAE946DD85CD9DFE /* wtns_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 339A24F3BCF94AD7A4D5001F /* wtns_utils.cpp */; };
+		7C1F47BE298C4566BFB15EF2 /* naf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3C6C7B239604FBE83B5A935 /* naf.cpp */; };
+		81E84D5018DF45AB89B6CC01 /* splitparstr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E40E2B0D993D420395ADAC82 /* splitparstr.cpp */; };
+		99042663C23D4ABF920C2BCE /* alt_bn128.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2193F24CFDF4F35B07E1F23 /* alt_bn128.cpp */; };
+		A1C628EC2EC6402BABBA47BD /* fileloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE354D0E345B482E90665B21 /* fileloader.cpp */; };
+		AC1A239101AD4773ACA04F0B /* prover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAA6D45ED80E41549561C508 /* prover.cpp */; };
+		ADFF358716DE4DCEBF8B53BA /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 506BD7FF2E5D40DCA3B388F2 /* logger.cpp */; };
+		B11F43152B62C1C40097A289 /* fr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8B1A41FCE6B418B97B290F7 /* fr.cpp */; };
+		B11F43162B62C1C60097A289 /* fr_generic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98D82FA87238424592A28CC6 /* fr_generic.cpp */; };
+		B11F43172B62C1CA0097A289 /* fr_raw_arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 47124957D01A450788264716 /* fr_raw_arm64.s */; };
+		B11F431C2B62C5F20097A289 /* fq_generic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F588230822045C0BE5F34E7 /* fq_generic.cpp */; };
+		B11F431E2B62C7210097A289 /* fr_raw_generic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B53CCE6A98254D6FA8E5C248 /* fr_raw_generic.cpp */; };
+		B1E5343E2B62CBE500896A28 /* fq_raw_generic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 338EE9CD9592420C817AD9AC /* fq_raw_generic.cpp */; };
+		B1E5343F2B62CBE500896A28 /* fr_raw_generic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CAB48D2B2373445ABCFD6F08 /* fr_raw_generic.cpp */; };
+		B1E534412B62DE8D00896A28 /* openmp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E534402B62DE8D00896A28 /* openmp.xcframework */; };
+		B268B1A2C0D843DAAEC9F545 /* binfile_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 483615CF3DED4DD485B9E79E /* binfile_utils.cpp */; };
+		C3EFFB407A074F5290BC9977 /* naf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67BEE88134BAB83DFD6AC /* naf.cpp */; };
+		CFBD51465EAE454C8A4B373C /* fileloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0311BD46D353413CB390A287 /* fileloader.cpp */; };
+		D2DB594FA0644794A1603DCB /* zkey_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA58C4DD8E07462CAB935376 /* zkey_utils.cpp */; };
+		D3A5273CC61C43E489EF2C10 /* prover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DAEF4FFE6774B07A4147CFC /* prover.cpp */; };
+		D8DD2CC726054B4292E224D2 /* binfile_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C003F01F7BE4BA59AF10DC7 /* binfile_utils.cpp */; };
+		E5A27C19C7A94F4F9B54E622 /* main_prover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9304B9A90AE04B17B1EB6AE9 /* main_prover.cpp */; };
+		E70A8F899E8F45F9AE49B051 /* fq_generic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81E586E1FA2848C18B6C9B14 /* fq_generic.cpp */; };
+		E820F667A7C44A9E98709E83 /* misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C7A2762CE57415692354E44 /* misc.cpp */; };
+		ED72F1F4DF314BFBB47AE0D7 /* misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F3298231F9B43C0A072BEFE /* misc.cpp */; };
+		F474810C9A574A69A121A199 /* fq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFD9A021912147F5AD2DBD14 /* fq.cpp */; };
+		F65A83DD22844E03BE5A7AAB /* splitparstr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D190359A7924C97B29F90F9 /* splitparstr.cpp */; };
+		F7A06864D3514BC2AD15ADEA /* fileloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46AE7B2557B84DCA8C8488DE /* fileloader.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1558B74A3D584C1F968F9849 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC099E9636564A0A84CAE707;
+			remoteInfo = rapidsnark;
+		};
+		1756766A93734966B833B9B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFDE651F855F4229BCA852F4;
+			remoteInfo = rapidsnarkStatic;
+		};
+		30B86655DE1A45A5AF9370AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 768B53AB43F241FA87FF5B00;
+			remoteInfo = test_prover;
+		};
+		3E327BE3A7A84724BE91F702 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6119D9CD36AD440BA74A4D8B;
+			remoteInfo = ZERO_CHECK;
+		};
+		437A9944E3D6463984EF5954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6119D9CD36AD440BA74A4D8B;
+			remoteInfo = ZERO_CHECK;
+		};
+		47DE92C8A8E54701BAF994BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BC9941E6CBC4D4F9669A359;
+			remoteInfo = fr;
+		};
+		4C2C2D4F93B843EE9254DAB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F64B34D64BF34CE4B742C6DE;
+			remoteInfo = fq;
+		};
+		4C4D996218544A238231962B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F64B34D64BF34CE4B742C6DE;
+			remoteInfo = fq;
+		};
+		4C61DA6AD29C46479A5FF657 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BBFBCBD44DD4FF9884E3D15;
+			remoteInfo = prover;
+		};
+		52C135EB88BC431F9E95E941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BC9941E6CBC4D4F9669A359;
+			remoteInfo = fr;
+		};
+		53710F7EABE1411C9AF14E1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F64B34D64BF34CE4B742C6DE;
+			remoteInfo = fq;
+		};
+		56A6B3011CDB4D3897ED6CC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BC9941E6CBC4D4F9669A359;
+			remoteInfo = fr;
+		};
+		56BB85A829314813A0AAA608 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BC9941E6CBC4D4F9669A359;
+			remoteInfo = fr;
+		};
+		57401D41EDBD4B60B93AA221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F64B34D64BF34CE4B742C6DE;
+			remoteInfo = fq;
+		};
+		6C01927FB91F476CB0DF3370 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6119D9CD36AD440BA74A4D8B;
+			remoteInfo = ZERO_CHECK;
+		};
+		76F4ADA8B60142F4B9972D30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BC9941E6CBC4D4F9669A359;
+			remoteInfo = fr;
+		};
+		87CAFDB79409468D9228E07E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C90C5F0A88364409BD205006;
+			remoteInfo = rapidsnarkStaticFrFq;
+		};
+		8ADD20CB4E5849D7A65B1FDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BC9941E6CBC4D4F9669A359;
+			remoteInfo = fr;
+		};
+		95945311F4074BE285B04D30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F64B34D64BF34CE4B742C6DE;
+			remoteInfo = fq;
+		};
+		9C5DF519395D4AC1BD07DEBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6119D9CD36AD440BA74A4D8B;
+			remoteInfo = ZERO_CHECK;
+		};
+		A1C1EDF963CE40E0BDD5D97F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6119D9CD36AD440BA74A4D8B;
+			remoteInfo = ZERO_CHECK;
+		};
+		B03BD1A694A04E8A9A5E718A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F64B34D64BF34CE4B742C6DE;
+			remoteInfo = fq;
+		};
+		B794019CB18D47239DC612CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6119D9CD36AD440BA74A4D8B;
+			remoteInfo = ZERO_CHECK;
+		};
+		C47A589462224416BFFB752B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6119D9CD36AD440BA74A4D8B;
+			remoteInfo = ZERO_CHECK;
+		};
+		C783DEC627B649B1B8B6A59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BC9941E6CBC4D4F9669A359;
+			remoteInfo = fr;
+		};
+		F16E1F4B760444C492715FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFDE651F855F4229BCA852F4;
+			remoteInfo = rapidsnarkStatic;
+		};
+		F64C5B26B5704BD9829B2F48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6119D9CD36AD440BA74A4D8B;
+			remoteInfo = ZERO_CHECK;
+		};
+		FD27F01A934A4530B8F22D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63FF1E76118493E8318B05A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F7477A3AD6D47DB8202B2CC;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0276296771AC4D7EBFB82C64 /* logger.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = logger.hpp; path = src/logger.hpp; sourceTree = SOURCE_ROOT; };
+		0311BD46D353413CB390A287 /* fileloader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fileloader.cpp; path = src/fileloader.cpp; sourceTree = SOURCE_ROOT; };
+		0C7A2762CE57415692354E44 /* misc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = misc.cpp; path = depends/ffiasm/c/misc.cpp; sourceTree = SOURCE_ROOT; };
+		0CE67BEE88134BAB83DFD6AC /* naf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = naf.cpp; path = depends/ffiasm/c/naf.cpp; sourceTree = SOURCE_ROOT; };
+		0D190359A7924C97B29F90F9 /* splitparstr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = splitparstr.cpp; path = depends/ffiasm/c/splitparstr.cpp; sourceTree = SOURCE_ROOT; };
+		114B1771A29B46648715CD5C /* fq_raw_generic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fq_raw_generic.cpp; path = build/fq_raw_generic.cpp; sourceTree = SOURCE_ROOT; };
+		184DBCD1D3CE4896944A7974 /* prover.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = prover.h; path = src/prover.h; sourceTree = SOURCE_ROOT; };
+		197F10D536FF4621B2BE517F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		21B1E8F6AF3B4286B23B1507 /* test_prover.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_prover.cpp; path = src/test_prover.cpp; sourceTree = SOURCE_ROOT; };
+		26A7347798CB4967AA9E130F /* prover.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = prover.cpp; path = src/prover.cpp; sourceTree = SOURCE_ROOT; };
+		2D70851B578F46F182DE570C /* binfile_utils.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = binfile_utils.hpp; path = src/binfile_utils.hpp; sourceTree = SOURCE_ROOT; };
+		2DAEF4FFE6774B07A4147CFC /* prover.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = prover.cpp; path = src/prover.cpp; sourceTree = SOURCE_ROOT; };
+		2E8656916E52478DB9CEF04C /* zkey_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = zkey_utils.cpp; path = src/zkey_utils.cpp; sourceTree = SOURCE_ROOT; };
+		300A6DB97EDC4637A91F2E48 /* alt_bn128.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = alt_bn128.cpp; path = depends/ffiasm/c/alt_bn128.cpp; sourceTree = SOURCE_ROOT; };
+		319825AF2B1D4D3A9C0BC2F7 /* wtns_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wtns_utils.cpp; path = src/wtns_utils.cpp; sourceTree = SOURCE_ROOT; };
+		338EE9CD9592420C817AD9AC /* fq_raw_generic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fq_raw_generic.cpp; path = build/fq_raw_generic.cpp; sourceTree = SOURCE_ROOT; };
+		339A24F3BCF94AD7A4D5001F /* wtns_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wtns_utils.cpp; path = src/wtns_utils.cpp; sourceTree = SOURCE_ROOT; };
+		3579D41E73E64EE7A19144FB /* prover */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; name = prover; path = prover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F5A1B9D24C14F9C884030AF /* logger.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = logger.cpp; path = src/logger.cpp; sourceTree = SOURCE_ROOT; };
+		3FE5E4C8EF7349AABF033C62 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		43E6803CF62A4303ACB95607 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		45B2E92BA6D94687AA5B58AA /* zkey_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = zkey_utils.cpp; path = src/zkey_utils.cpp; sourceTree = SOURCE_ROOT; };
+		46AE7B2557B84DCA8C8488DE /* fileloader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fileloader.cpp; path = src/fileloader.cpp; sourceTree = SOURCE_ROOT; };
+		47124957D01A450788264716 /* fr_raw_arm64.s */ = {isa = PBXFileReference; explicitFileType = sourcecode.asm; fileEncoding = 4; name = fr_raw_arm64.s; path = build/fr_raw_arm64.s; sourceTree = SOURCE_ROOT; };
+		483615CF3DED4DD485B9E79E /* binfile_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = binfile_utils.cpp; path = src/binfile_utils.cpp; sourceTree = SOURCE_ROOT; };
+		48A6A619449648CB8E5FDF76 /* zkey_utils.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = zkey_utils.hpp; path = src/zkey_utils.hpp; sourceTree = SOURCE_ROOT; };
+		4C4770D642E24A5F97DDE2D0 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = test/src/CMakeFiles/fr.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		506BD7FF2E5D40DCA3B388F2 /* logger.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = logger.cpp; path = src/logger.cpp; sourceTree = SOURCE_ROOT; };
+		50E5F853AFF74BB4AAD5B19A /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		567845DFC34E44CFBAD4EB04 /* zkey_utils.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = zkey_utils.hpp; path = src/zkey_utils.hpp; sourceTree = SOURCE_ROOT; };
+		5C003F01F7BE4BA59AF10DC7 /* binfile_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = binfile_utils.cpp; path = src/binfile_utils.cpp; sourceTree = SOURCE_ROOT; };
+		5D56DB914100480294E7BA65 /* wtns_utils.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = wtns_utils.hpp; path = src/wtns_utils.hpp; sourceTree = SOURCE_ROOT; };
+		681FD9719E424660B754E149 /* fq.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = fq.hpp; path = build/fq.hpp; sourceTree = SOURCE_ROOT; };
+		69531C7666B4459185647F8C /* libfr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libfr.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B04416DBEFF40978A595DFA /* logger.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = logger.hpp; path = src/logger.hpp; sourceTree = SOURCE_ROOT; };
+		6E20C0DCDE3D47F6861092E5 /* misc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = misc.cpp; path = depends/ffiasm/c/misc.cpp; sourceTree = SOURCE_ROOT; };
+		6F588230822045C0BE5F34E7 /* fq_generic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fq_generic.cpp; path = build/fq_generic.cpp; sourceTree = SOURCE_ROOT; };
+		71B0C92127DE4DC8AA67AF4B /* binfile_utils.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = binfile_utils.hpp; path = src/binfile_utils.hpp; sourceTree = SOURCE_ROOT; };
+		735B34EF9F314590A2F2692C /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = test/src/CMakeFiles/rapidsnarkStatic.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		7F8F12C0102A48ED99AE8972 /* librapidsnark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = librapidsnark.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		80137FBDA27B4BB080E20449 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8103E657181346C3A6964790 /* fr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = fr.hpp; path = build/fr.hpp; sourceTree = SOURCE_ROOT; };
+		81E586E1FA2848C18B6C9B14 /* fq_generic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fq_generic.cpp; path = build/fq_generic.cpp; sourceTree = SOURCE_ROOT; };
+		861D3CF7CCBF4F9F8EB6A019 /* fileloader.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = fileloader.hpp; path = src/fileloader.hpp; sourceTree = SOURCE_ROOT; };
+		87B44B3F857E4CCE948E7635 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8A256256149A464DA73A34AB /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = test/src/CMakeFiles/rapidsnark.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		8F3298231F9B43C0A072BEFE /* misc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = misc.cpp; path = depends/ffiasm/c/misc.cpp; sourceTree = SOURCE_ROOT; };
+		9098448C5C844CCDBC16A5ED /* wtns_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wtns_utils.cpp; path = src/wtns_utils.cpp; sourceTree = SOURCE_ROOT; };
+		9304B9A90AE04B17B1EB6AE9 /* main_prover.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main_prover.cpp; path = src/main_prover.cpp; sourceTree = SOURCE_ROOT; };
+		9859248073D34A1A98878C4B /* fileloader.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = fileloader.hpp; path = src/fileloader.hpp; sourceTree = SOURCE_ROOT; };
+		98D82FA87238424592A28CC6 /* fr_generic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fr_generic.cpp; path = build/fr_generic.cpp; sourceTree = SOURCE_ROOT; };
+		99CBDE37378444ED92D35510 /* fr_generic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fr_generic.cpp; path = build/fr_generic.cpp; sourceTree = SOURCE_ROOT; };
+		A18751D588E547939E8AF7E8 /* prover.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = prover.h; path = src/prover.h; sourceTree = SOURCE_ROOT; };
+		A1FB7C6BA3F74E2A88D32A1B /* splitparstr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = splitparstr.cpp; path = depends/ffiasm/c/splitparstr.cpp; sourceTree = SOURCE_ROOT; };
+		A2193F24CFDF4F35B07E1F23 /* alt_bn128.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = alt_bn128.cpp; path = depends/ffiasm/c/alt_bn128.cpp; sourceTree = SOURCE_ROOT; };
+		A254325002B2402CA2D5DE9C /* libfq.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libfq.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A27299E4F74412A2C8069B /* fq_raw_arm64.s */ = {isa = PBXFileReference; explicitFileType = sourcecode.asm; fileEncoding = 4; name = fq_raw_arm64.s; path = build/fq_raw_arm64.s; sourceTree = SOURCE_ROOT; };
+		A83B718D20644F85B4E20704 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B1E534402B62DE8D00896A28 /* openmp.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = openmp.xcframework; path = test/openmp.xcframework; sourceTree = "<group>"; };
+		B53CCE6A98254D6FA8E5C248 /* fr_raw_generic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fr_raw_generic.cpp; path = build/fr_raw_generic.cpp; sourceTree = SOURCE_ROOT; };
+		BA2D3AB2237641889617DC9A /* binfile_utils.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = binfile_utils.hpp; path = src/binfile_utils.hpp; sourceTree = SOURCE_ROOT; };
+		C094E1BAB4B34B4091A93154 /* prover.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = prover.h; path = src/prover.h; sourceTree = SOURCE_ROOT; };
+		C3C6C7B239604FBE83B5A935 /* naf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = naf.cpp; path = depends/ffiasm/c/naf.cpp; sourceTree = SOURCE_ROOT; };
+		C57DA03CB3444CE18DBDFEFD /* naf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = naf.cpp; path = depends/ffiasm/c/naf.cpp; sourceTree = SOURCE_ROOT; };
+		C90B9A528FEF47F489FC8584 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = test/src/CMakeFiles/rapidsnarkStaticFrFq.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		CAB48D2B2373445ABCFD6F08 /* fr_raw_generic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fr_raw_generic.cpp; path = build/fr_raw_generic.cpp; sourceTree = SOURCE_ROOT; };
+		CC07794BDA644E169319C4E0 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = test/src/CMakeFiles/test_prover.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		CE81973C285A47DC943B076F /* fr_raw_arm64.s */ = {isa = PBXFileReference; explicitFileType = sourcecode.asm; fileEncoding = 4; name = fr_raw_arm64.s; path = build/fr_raw_arm64.s; sourceTree = SOURCE_ROOT; };
+		CF5D20C775FD47D29C48D228 /* librapidsnark.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = librapidsnark.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD62F31D5CC479AB8998EF0 /* wtns_utils.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = wtns_utils.hpp; path = src/wtns_utils.hpp; sourceTree = SOURCE_ROOT; };
+		D0FEC66895B44AA2BEE4F563 /* alt_bn128.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = alt_bn128.cpp; path = depends/ffiasm/c/alt_bn128.cpp; sourceTree = SOURCE_ROOT; };
+		D3FEF60170874EA68FAC08D8 /* fileloader.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = fileloader.hpp; path = src/fileloader.hpp; sourceTree = SOURCE_ROOT; };
+		D78DB8AE31F346C7A87E94C2 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = test/src/CMakeFiles/fq.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		D7E6D20ACB2345BBB8ECEC7F /* test_prover */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; name = test_prover; path = test_prover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E281F99CCF46405486309843 /* fr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fr.cpp; path = build/fr.cpp; sourceTree = SOURCE_ROOT; };
+		E28D5080465842C5B6B530A5 /* fq.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fq.cpp; path = build/fq.cpp; sourceTree = SOURCE_ROOT; };
+		E388DED480AA49ACB78214B7 /* wtns_utils.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = wtns_utils.hpp; path = src/wtns_utils.hpp; sourceTree = SOURCE_ROOT; };
+		E40E2B0D993D420395ADAC82 /* splitparstr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = splitparstr.cpp; path = depends/ffiasm/c/splitparstr.cpp; sourceTree = SOURCE_ROOT; };
+		E9A2C94B74374618912B90C2 /* fq.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = fq.hpp; path = build/fq.hpp; sourceTree = SOURCE_ROOT; };
+		EA755229E3EA4EAB97BB9883 /* fq_raw_arm64.s */ = {isa = PBXFileReference; explicitFileType = sourcecode.asm; fileEncoding = 4; name = fq_raw_arm64.s; path = build/fq_raw_arm64.s; sourceTree = SOURCE_ROOT; };
+		ED4ED0C2D83D4A1DA427F2B1 /* librapidsnark-fr-fq.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "librapidsnark-fr-fq.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE354D0E345B482E90665B21 /* fileloader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fileloader.cpp; path = src/fileloader.cpp; sourceTree = SOURCE_ROOT; };
+		EFD9A021912147F5AD2DBD14 /* fq.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fq.cpp; path = build/fq.cpp; sourceTree = SOURCE_ROOT; };
+		F55E8F6BBDF341D68D352116 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = test/src/CMakeFiles/prover.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		F61E1FFD64B449FD8276A3D9 /* logger.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = logger.cpp; path = src/logger.cpp; sourceTree = SOURCE_ROOT; };
+		F7428D9982E04BA98C8E295B /* logger.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = logger.hpp; path = src/logger.hpp; sourceTree = SOURCE_ROOT; };
+		F8B1A41FCE6B418B97B290F7 /* fr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fr.cpp; path = build/fr.cpp; sourceTree = SOURCE_ROOT; };
+		FA2F21DA6129476C9EA74D00 /* fr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = fr.hpp; path = build/fr.hpp; sourceTree = SOURCE_ROOT; };
+		FA58C4DD8E07462CAB935376 /* zkey_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = zkey_utils.cpp; path = src/zkey_utils.cpp; sourceTree = SOURCE_ROOT; };
+		FA8886D70FE0421E846E5D18 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FAA6D45ED80E41549561C508 /* prover.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = prover.cpp; path = src/prover.cpp; sourceTree = SOURCE_ROOT; };
+		FD6ECFFDAA57480A86508D2A /* zkey_utils.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = zkey_utils.hpp; path = src/zkey_utils.hpp; sourceTree = SOURCE_ROOT; };
+		FF7213BA4D904EC98CF2A1DA /* binfile_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = binfile_utils.cpp; path = src/binfile_utils.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0908C97D2A8E4EF989226CC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE2E867FE76481098D213E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576F3457AEC24799AE3AB424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CC4B7819AE4EDCA805B09B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A02BC8C4F1A4B8688DAD581 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F8577C561FD4883BEFCBA2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E534412B62DE8D00896A28 /* openmp.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7745D6E3461740D4B9426819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0253BE423EAF41E6B3800295 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8B1A41FCE6B418B97B290F7 /* fr.cpp */,
+				98D82FA87238424592A28CC6 /* fr_generic.cpp */,
+				B53CCE6A98254D6FA8E5C248 /* fr_raw_generic.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		121BED08B3364931914D6913 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E28D5080465842C5B6B530A5 /* fq.cpp */,
+				81E586E1FA2848C18B6C9B14 /* fq_generic.cpp */,
+				338EE9CD9592420C817AD9AC /* fq_raw_generic.cpp */,
+				E281F99CCF46405486309843 /* fr.cpp */,
+				99CBDE37378444ED92D35510 /* fr_generic.cpp */,
+				CAB48D2B2373445ABCFD6F08 /* fr_raw_generic.cpp */,
+				D0FEC66895B44AA2BEE4F563 /* alt_bn128.cpp */,
+				0C7A2762CE57415692354E44 /* misc.cpp */,
+				C3C6C7B239604FBE83B5A935 /* naf.cpp */,
+				A1FB7C6BA3F74E2A88D32A1B /* splitparstr.cpp */,
+				FF7213BA4D904EC98CF2A1DA /* binfile_utils.cpp */,
+				0311BD46D353413CB390A287 /* fileloader.cpp */,
+				506BD7FF2E5D40DCA3B388F2 /* logger.cpp */,
+				2DAEF4FFE6774B07A4147CFC /* prover.cpp */,
+				9098448C5C844CCDBC16A5ED /* wtns_utils.cpp */,
+				45B2E92BA6D94687AA5B58AA /* zkey_utils.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		15548D9635CA471F843C832E /* test_prover */ = {
+			isa = PBXGroup;
+			children = (
+				ECAAC2663E674DA7A9D6D19A /* Source Files */,
+				2F87DE4FFDEE4D42ADBDFEE9 /* Resources */,
+				43E6803CF62A4303ACB95607 /* CMakeLists.txt */,
+			);
+			name = test_prover;
+			sourceTree = "<group>";
+		};
+		1AF10840E1E544B4AE9F1947 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				681FD9719E424660B754E149 /* fq.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		1B45451BB1794DCFB624CBFA /* fr */ = {
+			isa = PBXGroup;
+			children = (
+				73DF4059A7F74781B7776F78 /* Header Files */,
+				0253BE423EAF41E6B3800295 /* Source Files */,
+				407E6A37C2EB45C48F7B47CA /* Resources */,
+				47124957D01A450788264716 /* fr_raw_arm64.s */,
+				87B44B3F857E4CCE948E7635 /* CMakeLists.txt */,
+			);
+			name = fr;
+			sourceTree = "<group>";
+		};
+		2F87DE4FFDEE4D42ADBDFEE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC07794BDA644E169319C4E0 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3F2F3E9FB9154A5891BE6F80 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				8028409EC58D4ACC97A37203 /* CMake Rules */,
+				50E5F853AFF74BB4AAD5B19A /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		407E6A37C2EB45C48F7B47CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C4770D642E24A5F97DDE2D0 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		43E62625E8354447AC8FEC58 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D78DB8AE31F346C7A87E94C2 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		456EF425BB03439AB69FC420 /* rapidsnarkStatic */ = {
+			isa = PBXGroup;
+			children = (
+				485F68C63BE94B0AB5ECA8A2 /* Header Files */,
+				A0EDF614F8CC4B04891F570A /* Source Files */,
+				B8414D70579940F49BDF0046 /* Resources */,
+				197F10D536FF4621B2BE517F /* CMakeLists.txt */,
+			);
+			name = rapidsnarkStatic;
+			sourceTree = "<group>";
+		};
+		485F68C63BE94B0AB5ECA8A2 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA2D3AB2237641889617DC9A /* binfile_utils.hpp */,
+				D3FEF60170874EA68FAC08D8 /* fileloader.hpp */,
+				6B04416DBEFF40978A595DFA /* logger.hpp */,
+				184DBCD1D3CE4896944A7974 /* prover.h */,
+				CFD62F31D5CC479AB8998EF0 /* wtns_utils.hpp */,
+				567845DFC34E44CFBAD4EB04 /* zkey_utils.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		51497F1E84C94FCD942979FB /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFD9A021912147F5AD2DBD14 /* fq.cpp */,
+				6F588230822045C0BE5F34E7 /* fq_generic.cpp */,
+				114B1771A29B46648715CD5C /* fq_raw_generic.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		616480A11CA24A55A44A7A34 /* rapidsnark */ = {
+			isa = PBXGroup;
+			children = (
+				C11AED847E2E435CB9698B7B /* Header Files */,
+				D27B4E47B7F94A5693CB74D6 /* Source Files */,
+				FDAF50D101CD4EF7945EB5A8 /* Resources */,
+				3FE5E4C8EF7349AABF033C62 /* CMakeLists.txt */,
+			);
+			name = rapidsnark;
+			sourceTree = "<group>";
+		};
+		73DF4059A7F74781B7776F78 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				8103E657181346C3A6964790 /* fr.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		7D0DC6EC1F8B450390BDE850 /* rapidsnarkStaticFrFq */ = {
+			isa = PBXGroup;
+			children = (
+				B1E534402B62DE8D00896A28 /* openmp.xcframework */,
+				AA7F082D861F48988B7DC506 /* Header Files */,
+				121BED08B3364931914D6913 /* Source Files */,
+				BEAF948C7BC64694B472462C /* Resources */,
+				EA755229E3EA4EAB97BB9883 /* fq_raw_arm64.s */,
+				CE81973C285A47DC943B076F /* fr_raw_arm64.s */,
+				FA8886D70FE0421E846E5D18 /* CMakeLists.txt */,
+			);
+			name = rapidsnarkStaticFrFq;
+			sourceTree = "<group>";
+		};
+		7DF5AE68C9754A50AE1B5053 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8028409EC58D4ACC97A37203 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		A0EDF614F8CC4B04891F570A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2193F24CFDF4F35B07E1F23 /* alt_bn128.cpp */,
+				6E20C0DCDE3D47F6861092E5 /* misc.cpp */,
+				0CE67BEE88134BAB83DFD6AC /* naf.cpp */,
+				0D190359A7924C97B29F90F9 /* splitparstr.cpp */,
+				483615CF3DED4DD485B9E79E /* binfile_utils.cpp */,
+				46AE7B2557B84DCA8C8488DE /* fileloader.cpp */,
+				F61E1FFD64B449FD8276A3D9 /* logger.cpp */,
+				26A7347798CB4967AA9E130F /* prover.cpp */,
+				319825AF2B1D4D3A9C0BC2F7 /* wtns_utils.cpp */,
+				FA58C4DD8E07462CAB935376 /* zkey_utils.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A309639FB3544DD08DA6D69C = {
+			isa = PBXGroup;
+			children = (
+				3F2F3E9FB9154A5891BE6F80 /* ALL_BUILD */,
+				1B45451BB1794DCFB624CBFA /* fr */,
+				F4F5BE9A8A7E42B08558E3BD /* fq */,
+				456EF425BB03439AB69FC420 /* rapidsnarkStatic */,
+				7D0DC6EC1F8B450390BDE850 /* rapidsnarkStaticFrFq */,
+				E1564B9387364018A8CBFCAB /* prover */,
+				616480A11CA24A55A44A7A34 /* rapidsnark */,
+				15548D9635CA471F843C832E /* test_prover */,
+				C2CC6B78F1BE4534A5094ABD /* Products */,
+				7DF5AE68C9754A50AE1B5053 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AA7F082D861F48988B7DC506 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9A2C94B74374618912B90C2 /* fq.hpp */,
+				FA2F21DA6129476C9EA74D00 /* fr.hpp */,
+				2D70851B578F46F182DE570C /* binfile_utils.hpp */,
+				9859248073D34A1A98878C4B /* fileloader.hpp */,
+				0276296771AC4D7EBFB82C64 /* logger.hpp */,
+				C094E1BAB4B34B4091A93154 /* prover.h */,
+				5D56DB914100480294E7BA65 /* wtns_utils.hpp */,
+				48A6A619449648CB8E5FDF76 /* zkey_utils.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		AB333F36B52049CBA671CC0D /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9304B9A90AE04B17B1EB6AE9 /* main_prover.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B8414D70579940F49BDF0046 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				735B34EF9F314590A2F2692C /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BEAF948C7BC64694B472462C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C90B9A528FEF47F489FC8584 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C11AED847E2E435CB9698B7B /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				71B0C92127DE4DC8AA67AF4B /* binfile_utils.hpp */,
+				861D3CF7CCBF4F9F8EB6A019 /* fileloader.hpp */,
+				F7428D9982E04BA98C8E295B /* logger.hpp */,
+				A18751D588E547939E8AF7E8 /* prover.h */,
+				E388DED480AA49ACB78214B7 /* wtns_utils.hpp */,
+				FD6ECFFDAA57480A86508D2A /* zkey_utils.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		C2CC6B78F1BE4534A5094ABD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A254325002B2402CA2D5DE9C /* libfq.a */,
+				69531C7666B4459185647F8C /* libfr.a */,
+				3579D41E73E64EE7A19144FB /* prover */,
+				CF5D20C775FD47D29C48D228 /* librapidsnark.dylib */,
+				7F8F12C0102A48ED99AE8972 /* librapidsnark.a */,
+				ED4ED0C2D83D4A1DA427F2B1 /* librapidsnark-fr-fq.a */,
+				D7E6D20ACB2345BBB8ECEC7F /* test_prover */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA6877DBA6524D6981E1E42E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F55E8F6BBDF341D68D352116 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D27B4E47B7F94A5693CB74D6 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				300A6DB97EDC4637A91F2E48 /* alt_bn128.cpp */,
+				8F3298231F9B43C0A072BEFE /* misc.cpp */,
+				C57DA03CB3444CE18DBDFEFD /* naf.cpp */,
+				E40E2B0D993D420395ADAC82 /* splitparstr.cpp */,
+				5C003F01F7BE4BA59AF10DC7 /* binfile_utils.cpp */,
+				EE354D0E345B482E90665B21 /* fileloader.cpp */,
+				3F5A1B9D24C14F9C884030AF /* logger.cpp */,
+				FAA6D45ED80E41549561C508 /* prover.cpp */,
+				339A24F3BCF94AD7A4D5001F /* wtns_utils.cpp */,
+				2E8656916E52478DB9CEF04C /* zkey_utils.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E1564B9387364018A8CBFCAB /* prover */ = {
+			isa = PBXGroup;
+			children = (
+				AB333F36B52049CBA671CC0D /* Source Files */,
+				CA6877DBA6524D6981E1E42E /* Resources */,
+				A83B718D20644F85B4E20704 /* CMakeLists.txt */,
+			);
+			name = prover;
+			sourceTree = "<group>";
+		};
+		ECAAC2663E674DA7A9D6D19A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				21B1E8F6AF3B4286B23B1507 /* test_prover.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F4F5BE9A8A7E42B08558E3BD /* fq */ = {
+			isa = PBXGroup;
+			children = (
+				1AF10840E1E544B4AE9F1947 /* Header Files */,
+				51497F1E84C94FCD942979FB /* Source Files */,
+				43E62625E8354447AC8FEC58 /* Resources */,
+				A7A27299E4F74412A2C8069B /* fq_raw_arm64.s */,
+				80137FBDA27B4BB080E20449 /* CMakeLists.txt */,
+			);
+			name = fq;
+			sourceTree = "<group>";
+		};
+		FDAF50D101CD4EF7945EB5A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A256256149A464DA73A34AB /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BC9941E6CBC4D4F9669A359 /* fr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7FD98B16F124623B375CDBA /* Build configuration list for PBXNativeTarget "fr" */;
+			buildPhases = (
+				8ABAE64432CB40B385B16360 /* Sources */,
+				576F3457AEC24799AE3AB424 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87CD644A8916441BA1AD03CC /* PBXTargetDependency */,
+			);
+			name = fr;
+			productName = fr;
+			productReference = 69531C7666B4459185647F8C /* libfr.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6BBFBCBD44DD4FF9884E3D15 /* prover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED27C8F8D7FF43D8ACD73692 /* Build configuration list for PBXNativeTarget "prover" */;
+			buildPhases = (
+				891BF363298544D59609F2D9 /* Sources */,
+				6A02BC8C4F1A4B8688DAD581 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF2D671203144AAF9BF7AA42 /* PBXTargetDependency */,
+				F3BC9EA3BA5E475482EFC458 /* PBXTargetDependency */,
+				5C02122B107347869803E1B6 /* PBXTargetDependency */,
+				9D6F782FDB9740D59104B7D7 /* PBXTargetDependency */,
+			);
+			name = prover;
+			productName = prover;
+			productReference = 3579D41E73E64EE7A19144FB /* prover */;
+			productType = "com.apple.product-type.application";
+		};
+		768B53AB43F241FA87FF5B00 /* test_prover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F484EE6094194BEE962E8DD2 /* Build configuration list for PBXNativeTarget "test_prover" */;
+			buildPhases = (
+				B0D204B610274FC99069B82F /* Sources */,
+				69CC4B7819AE4EDCA805B09B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B25508EF4F1E457193A6AEF8 /* PBXTargetDependency */,
+				3798A831BE9C43B7A62700E2 /* PBXTargetDependency */,
+				6F91EE6423204377B963C148 /* PBXTargetDependency */,
+			);
+			name = test_prover;
+			productName = test_prover;
+			productReference = D7E6D20ACB2345BBB8ECEC7F /* test_prover */;
+			productType = "com.apple.product-type.application";
+		};
+		BFDE651F855F4229BCA852F4 /* rapidsnarkStatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14104074063B413FBBF3FFC8 /* Build configuration list for PBXNativeTarget "rapidsnarkStatic" */;
+			buildPhases = (
+				7ACF8FC6069D4B9A93748A02 /* Sources */,
+				0908C97D2A8E4EF989226CC1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6FCF58AB57F4B078EBECDA2 /* PBXTargetDependency */,
+				AACA2B74CF22410B80E48482 /* PBXTargetDependency */,
+				3B5032DD85E545E2B82734CE /* PBXTargetDependency */,
+			);
+			name = rapidsnarkStatic;
+			productName = rapidsnarkStatic;
+			productReference = 7F8F12C0102A48ED99AE8972 /* librapidsnark.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C90C5F0A88364409BD205006 /* rapidsnarkStaticFrFq */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5C95F1C305435D892A2E7D /* Build configuration list for PBXNativeTarget "rapidsnarkStaticFrFq" */;
+			buildPhases = (
+				11734B8BE0DB40E7BDD95C57 /* Sources */,
+				6F8577C561FD4883BEFCBA2F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8BC09E877464059B65151FF /* PBXTargetDependency */,
+				0AE8832A196E42B5A7136E84 /* PBXTargetDependency */,
+				441CA4B728224DE29DD4EF2F /* PBXTargetDependency */,
+			);
+			name = rapidsnarkStaticFrFq;
+			productName = rapidsnarkStaticFrFq;
+			productReference = ED4ED0C2D83D4A1DA427F2B1 /* librapidsnark-fr-fq.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CC099E9636564A0A84CAE707 /* rapidsnark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCB16B4C256C412B8CF87FA2 /* Build configuration list for PBXNativeTarget "rapidsnark" */;
+			buildPhases = (
+				AFFAA7F455F74D32B8224CB5 /* Sources */,
+				7745D6E3461740D4B9426819 /* Frameworks */,
+				9E76A06266C1D9105DFE12A5 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B71FF1519AAC4A2C988AEDBC /* PBXTargetDependency */,
+				5D4FE7682B824764B7C771D8 /* PBXTargetDependency */,
+				A0DB1EEF42894DE9B9822315 /* PBXTargetDependency */,
+			);
+			name = rapidsnark;
+			productName = rapidsnark;
+			productReference = CF5D20C775FD47D29C48D228 /* librapidsnark.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		F64B34D64BF34CE4B742C6DE /* fq */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DA4902A98D448F99B5E5F7D /* Build configuration list for PBXNativeTarget "fq" */;
+			buildPhases = (
+				A74F16E19E244FFDADA4A2A0 /* Sources */,
+				0FE2E867FE76481098D213E6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78628D5E7BE74A3C9627B4C3 /* PBXTargetDependency */,
+				D6FFFEC675AE4939AE3C191C /* PBXTargetDependency */,
+			);
+			name = fq;
+			productName = fq;
+			productReference = A254325002B2402CA2D5DE9C /* libfq.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F63FF1E76118493E8318B05A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1520;
+			};
+			buildConfigurationList = 26D6008125FC479C80650A65 /* Build configuration list for PBXProject "rapidsnark" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A309639FB3544DD08DA6D69C;
+			projectDirPath = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark;
+			projectRoot = "";
+			targets = (
+				2F7477A3AD6D47DB8202B2CC /* ALL_BUILD */,
+				6119D9CD36AD440BA74A4D8B /* ZERO_CHECK */,
+				F64B34D64BF34CE4B742C6DE /* fq */,
+				1BC9941E6CBC4D4F9669A359 /* fr */,
+				BD11A8DE7D1D42ADAE81361E /* install */,
+				6BBFBCBD44DD4FF9884E3D15 /* prover */,
+				CC099E9636564A0A84CAE707 /* rapidsnark */,
+				BFDE651F855F4229BCA852F4 /* rapidsnarkStatic */,
+				C90C5F0A88364409BD205006 /* rapidsnarkStaticFrFq */,
+				768B53AB43F241FA87FF5B00 /* test_prover */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		242FC21B12328D0E382B0D5C /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+				/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/CMakeFiles/ZERO_CHECK,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test\n  make -f /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test\n  make -f /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test\n  make -f /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test\n  make -f /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/CMakeScripts/ReRunCMake.make\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test\n  /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test\n  /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test\n  /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test\n  /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E76A06266C1D9105DFE12A5 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src\n  /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E cmake_symlink_library /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src\n  /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E cmake_symlink_library /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src\n  /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E cmake_symlink_library /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src\n  /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E cmake_symlink_library /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/librapidsnark.dylib\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F8CA0890B823ED53E77976C8 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+				/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/CMakeFiles/ALL_BUILD,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test\n  echo Build\\ all\\ projects\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11734B8BE0DB40E7BDD95C57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5F5457F27044D4ABA6FA5C /* fq.cpp in Sources */,
+				E70A8F899E8F45F9AE49B051 /* fq_generic.cpp in Sources */,
+				355A25FBFD8844B8ABEFD957 /* fq_raw_arm64.s in Sources */,
+				6F3FDEA8B46B44148A82A204 /* fr.cpp in Sources */,
+				1A9AD3B9DF3B49D3A659AC59 /* fr_generic.cpp in Sources */,
+				3713CAA2032F4626BE02FDEE /* fr_raw_arm64.s in Sources */,
+				6A15BACE7EEB4EDC877EAA6B /* alt_bn128.cpp in Sources */,
+				E820F667A7C44A9E98709E83 /* misc.cpp in Sources */,
+				B1E5343F2B62CBE500896A28 /* fr_raw_generic.cpp in Sources */,
+				7C1F47BE298C4566BFB15EF2 /* naf.cpp in Sources */,
+				628E8E2C422D4A3CAB7CF65B /* splitparstr.cpp in Sources */,
+				B1E5343E2B62CBE500896A28 /* fq_raw_generic.cpp in Sources */,
+				2D66B61C49F04C0EB94EA4E3 /* binfile_utils.cpp in Sources */,
+				CFBD51465EAE454C8A4B373C /* fileloader.cpp in Sources */,
+				ADFF358716DE4DCEBF8B53BA /* logger.cpp in Sources */,
+				D3A5273CC61C43E489EF2C10 /* prover.cpp in Sources */,
+				41F58DE1C7E049E2A349C130 /* wtns_utils.cpp in Sources */,
+				0E11BD24AE2949A9B122B0E3 /* zkey_utils.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACF8FC6069D4B9A93748A02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99042663C23D4ABF920C2BCE /* alt_bn128.cpp in Sources */,
+				0499E6AE95A04D73B9E79158 /* misc.cpp in Sources */,
+				C3EFFB407A074F5290BC9977 /* naf.cpp in Sources */,
+				F65A83DD22844E03BE5A7AAB /* splitparstr.cpp in Sources */,
+				B268B1A2C0D843DAAEC9F545 /* binfile_utils.cpp in Sources */,
+				F7A06864D3514BC2AD15ADEA /* fileloader.cpp in Sources */,
+				6B8AD934B5024E48B677ABF0 /* logger.cpp in Sources */,
+				1B79AE0C729A4862851C8427 /* prover.cpp in Sources */,
+				22D6C11C328A49AE90458482 /* wtns_utils.cpp in Sources */,
+				D2DB594FA0644794A1603DCB /* zkey_utils.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		891BF363298544D59609F2D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5A27C19C7A94F4F9B54E622 /* main_prover.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ABAE64432CB40B385B16360 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B11F431E2B62C7210097A289 /* fr_raw_generic.cpp in Sources */,
+				B11F43172B62C1CA0097A289 /* fr_raw_arm64.s in Sources */,
+				B11F43152B62C1C40097A289 /* fr.cpp in Sources */,
+				B11F43162B62C1C60097A289 /* fr_generic.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A74F16E19E244FFDADA4A2A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F474810C9A574A69A121A199 /* fq.cpp in Sources */,
+				2DE3E0FADFCE4B1CB712E50E /* fq_raw_arm64.s in Sources */,
+				B11F431C2B62C5F20097A289 /* fq_generic.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFAA7F455F74D32B8224CB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64939EA5F53543309EE83E4D /* alt_bn128.cpp in Sources */,
+				ED72F1F4DF314BFBB47AE0D7 /* misc.cpp in Sources */,
+				47EE5A2D595E43E0BD44A1AD /* naf.cpp in Sources */,
+				81E84D5018DF45AB89B6CC01 /* splitparstr.cpp in Sources */,
+				D8DD2CC726054B4292E224D2 /* binfile_utils.cpp in Sources */,
+				A1C628EC2EC6402BABBA47BD /* fileloader.cpp in Sources */,
+				4AFA86D7CFA54EA89F7DFC83 /* logger.cpp in Sources */,
+				AC1A239101AD4773ACA04F0B /* prover.cpp in Sources */,
+				7AFA1DD7DAE946DD85CD9DFE /* wtns_utils.cpp in Sources */,
+				01F0871C678645C687FC39B5 /* zkey_utils.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0D204B610274FC99069B82F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3477048C15CE4E06AC5C4DE6 /* test_prover.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0267DE18F3924E81A849963C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F64B34D64BF34CE4B742C6DE /* fq */;
+			targetProxy = 53710F7EABE1411C9AF14E1D /* PBXContainerItemProxy */;
+		};
+		0AE8832A196E42B5A7136E84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F64B34D64BF34CE4B742C6DE /* fq */;
+			targetProxy = 57401D41EDBD4B60B93AA221 /* PBXContainerItemProxy */;
+		};
+		1E3F3BF646B14CF4831467DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFDE651F855F4229BCA852F4 /* rapidsnarkStatic */;
+			targetProxy = F16E1F4B760444C492715FBE /* PBXContainerItemProxy */;
+		};
+		33FCF6E2B83A44DCACC8B9C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 768B53AB43F241FA87FF5B00 /* test_prover */;
+			targetProxy = 30B86655DE1A45A5AF9370AF /* PBXContainerItemProxy */;
+		};
+		3798A831BE9C43B7A62700E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F64B34D64BF34CE4B742C6DE /* fq */;
+			targetProxy = 95945311F4074BE285B04D30 /* PBXContainerItemProxy */;
+		};
+		3B5032DD85E545E2B82734CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6119D9CD36AD440BA74A4D8B /* ZERO_CHECK */;
+			targetProxy = 6C01927FB91F476CB0DF3370 /* PBXContainerItemProxy */;
+		};
+		441CA4B728224DE29DD4EF2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6119D9CD36AD440BA74A4D8B /* ZERO_CHECK */;
+			targetProxy = 9C5DF519395D4AC1BD07DEBB /* PBXContainerItemProxy */;
+		};
+		5C02122B107347869803E1B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F64B34D64BF34CE4B742C6DE /* fq */;
+			targetProxy = B03BD1A694A04E8A9A5E718A /* PBXContainerItemProxy */;
+		};
+		5D4FE7682B824764B7C771D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F64B34D64BF34CE4B742C6DE /* fq */;
+			targetProxy = 4C4D996218544A238231962B /* PBXContainerItemProxy */;
+		};
+		6F91EE6423204377B963C148 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6119D9CD36AD440BA74A4D8B /* ZERO_CHECK */;
+			targetProxy = F64C5B26B5704BD9829B2F48 /* PBXContainerItemProxy */;
+		};
+		78628D5E7BE74A3C9627B4C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BC9941E6CBC4D4F9669A359 /* fr */;
+			targetProxy = 76F4ADA8B60142F4B9972D30 /* PBXContainerItemProxy */;
+		};
+		85F8318F9C0647F18FCB1444 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC099E9636564A0A84CAE707 /* rapidsnark */;
+			targetProxy = 1558B74A3D584C1F968F9849 /* PBXContainerItemProxy */;
+		};
+		87CD644A8916441BA1AD03CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6119D9CD36AD440BA74A4D8B /* ZERO_CHECK */;
+			targetProxy = A1C1EDF963CE40E0BDD5D97F /* PBXContainerItemProxy */;
+		};
+		8ACA660E967D432B93DBC374 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BBFBCBD44DD4FF9884E3D15 /* prover */;
+			targetProxy = 4C61DA6AD29C46479A5FF657 /* PBXContainerItemProxy */;
+		};
+		9D6F782FDB9740D59104B7D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6119D9CD36AD440BA74A4D8B /* ZERO_CHECK */;
+			targetProxy = 3E327BE3A7A84724BE91F702 /* PBXContainerItemProxy */;
+		};
+		A0DB1EEF42894DE9B9822315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6119D9CD36AD440BA74A4D8B /* ZERO_CHECK */;
+			targetProxy = 437A9944E3D6463984EF5954 /* PBXContainerItemProxy */;
+		};
+		AACA2B74CF22410B80E48482 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F64B34D64BF34CE4B742C6DE /* fq */;
+			targetProxy = 4C2C2D4F93B843EE9254DAB6 /* PBXContainerItemProxy */;
+		};
+		AF2D671203144AAF9BF7AA42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFDE651F855F4229BCA852F4 /* rapidsnarkStatic */;
+			targetProxy = 1756766A93734966B833B9B4 /* PBXContainerItemProxy */;
+		};
+		B25508EF4F1E457193A6AEF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BC9941E6CBC4D4F9669A359 /* fr */;
+			targetProxy = 8ADD20CB4E5849D7A65B1FDA /* PBXContainerItemProxy */;
+		};
+		B6FCF58AB57F4B078EBECDA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BC9941E6CBC4D4F9669A359 /* fr */;
+			targetProxy = C783DEC627B649B1B8B6A59A /* PBXContainerItemProxy */;
+		};
+		B71FF1519AAC4A2C988AEDBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BC9941E6CBC4D4F9669A359 /* fr */;
+			targetProxy = 47DE92C8A8E54701BAF994BC /* PBXContainerItemProxy */;
+		};
+		BDCD9FB34B494023A7F61E98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BC9941E6CBC4D4F9669A359 /* fr */;
+			targetProxy = 56A6B3011CDB4D3897ED6CC1 /* PBXContainerItemProxy */;
+		};
+		C6B643A1D6F44450BA257AD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F7477A3AD6D47DB8202B2CC /* ALL_BUILD */;
+			targetProxy = FD27F01A934A4530B8F22D94 /* PBXContainerItemProxy */;
+		};
+		C7DE2C2C5BCC45F68AA6C271 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6119D9CD36AD440BA74A4D8B /* ZERO_CHECK */;
+			targetProxy = C47A589462224416BFFB752B /* PBXContainerItemProxy */;
+		};
+		D6FFFEC675AE4939AE3C191C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6119D9CD36AD440BA74A4D8B /* ZERO_CHECK */;
+			targetProxy = B794019CB18D47239DC612CD /* PBXContainerItemProxy */;
+		};
+		D8BC09E877464059B65151FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BC9941E6CBC4D4F9669A359 /* fr */;
+			targetProxy = 52C135EB88BC431F9E95E941 /* PBXContainerItemProxy */;
+		};
+		D95FAD5922034988BA037AD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C90C5F0A88364409BD205006 /* rapidsnarkStaticFrFq */;
+			targetProxy = 87CAFDB79409468D9228E07E /* PBXContainerItemProxy */;
+		};
+		F3BC9EA3BA5E475482EFC458 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BC9941E6CBC4D4F9669A359 /* fr */;
+			targetProxy = 56BB85A829314813A0AAA608 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02707DFB4B6F4B44BA42942C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/CMakeFiles/test_prover.dir/Info.plist;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_prover;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/test_prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		0849ACD43BAB481FB0F09F00 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+					"\"-Xclang -fopenmp\"",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "rapidsnark-fr-fq";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/rapidsnarkStaticFrFq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		0C87DA03A5B143DBA7273FFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build;
+			};
+			name = Release;
+		};
+		1387D0E9330D46E39E419A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"'-std=gnu++11'",
+					"-fPIC",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = fq;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/fq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		23CD1D2FCD154558A645078B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/CMakeFiles/test_prover.dir/Info.plist;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"'-std=gnu++11'",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_prover;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/test_prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		2B793067692B4C4C91993532 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		31776FB93D854C339EE23020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"'-std=gnu++11'",
+					"-fPIC",
+					"'-Xclang -fopenmp'",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "rapidsnark-fr-fq";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/rapidsnarkStaticFrFq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		3513EFAA48B24E99B4EBF187 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/CMakeFiles/test_prover.dir/Info.plist;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_prover;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/test_prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		3632E305713C473A80C1C99D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		363BF5A301B84B9B9B65D701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					rapidsnark_EXPORTS,
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"'-std=gnu++11'",
+					"-fPIC",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rapidsnark;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/rapidsnark.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		381039499E2F4D7BA0D55098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		3A3FDB5778F5460DBE0E278E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/CMakeFiles/prover.dir/Info.plist;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/librapidsnark.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = prover;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		3EA82C9FE8FD44EEA97A8BFD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		4052367FBD1E4790931B610B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		42DEE609DA7E4E9FB73844B3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = fq;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/fq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		51BCE0B17BB94166B88A4F85 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+					"\"-Xclang -fopenmp\"",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "rapidsnark-fr-fq";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/rapidsnarkStaticFrFq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		58C1D40465564F50A06FE3F1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		593C079076A34AA4A20261FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		628543F9D4894B6B992AB704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/CMakeFiles/prover.dir/Info.plist;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"'-std=gnu++11'",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}/librapidsnark.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = prover;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		65053851761F4E409B3F7ADE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					rapidsnark_EXPORTS,
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rapidsnark;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/rapidsnark.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		679D3EDFE4474847B0327B33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					rapidsnark_EXPORTS,
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rapidsnark;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/rapidsnark.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		6F52C497680549BFB9044C9C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = fq;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/fq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		704460318A63420BB0C62DF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = fr;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		753FD6DABD3349C7AC1FAF2A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build;
+			};
+			name = MinSizeRel;
+		};
+		765EF0B182CB45FE990971AF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		766FC7B0D97644E3B0C357DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+					"-Xpreprocessor",
+					"-fopenmp",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "rapidsnark-fr-fq";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/rapidsnarkStaticFrFq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		76DF87B0959440E8A752685D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		7C819D3ECA3340268E83AB6E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					rapidsnark_EXPORTS,
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rapidsnark;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/rapidsnark.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		86BE33A8981A4777B9F1995B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/CMakeFiles/prover.dir/Info.plist;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/librapidsnark.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = prover;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		87110770AFFC4CB18BF623B3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build;
+			};
+			name = RelWithDebInfo;
+		};
+		980A83EB09FE49BFBA101955 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rapidsnark;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/rapidsnarkStatic.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		A287EB6FDA58482FB5A6EE95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		B4C3A2A157C443B5B40BDE77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build;
+			};
+			name = Debug;
+		};
+		B560E70B8C994403B7A2C772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/CMakeFiles/prover.dir/Info.plist;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}/librapidsnark.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = prover;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		B737A1A16E184349BC97409E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"'-std=gnu++11'",
+					"-fPIC",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = fr;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		B7F15F49C49149E0BD489687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rapidsnark;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/rapidsnarkStatic.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		CC9B841EDFAC432A87D8F25B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = fr;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		D4CEE7614735476D9276D8EB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = fr;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/fr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		DEB5A238D940435FAEA2F240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = fq;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/fq.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		EE3ADFD299764C0ABC67A4D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		EFB0F55C505E4B819F633CC2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rapidsnark;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/rapidsnarkStatic.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		F001F70DC05044328492CFEF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		F1C91EE066C94885BE49A4EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Debug${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"'-std=gnu++11'",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rapidsnark;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/rapidsnarkStatic.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		FEF8F12D8A1A4DF78ED65CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_LONG_LONG_LIMB,
+					ARCH_ARM64,
+					USE_OPENMP,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/include,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../src,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../build,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/ffiasm/c,
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/src/../depends/json/single_include,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/CMakeFiles/test_prover.dir/Info.plist;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"'-Xpreprocessor -fopenmp /Users/yushihang/Downloads/OpenMP.xcframework -I/Users/yushihang/Downloads/OpenMP.xcframework'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}/libfq.a",
+					"/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/src/Release${EFFECTIVE_PLATFORM_NAME}/libfr.a",
+					/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/depends/gmp/package_ios_arm64/lib/libgmp.a,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_prover;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yushihang/Documents/HSBC/polygonID/rapidsnark/test/build/test_prover.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0169962614FF4AC5A9C001DB /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3ADFD299764C0ABC67A4D2 /* Debug */,
+				3632E305713C473A80C1C99D /* Release */,
+				765EF0B182CB45FE990971AF /* MinSizeRel */,
+				F001F70DC05044328492CFEF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0252D9FDA3574789828DDDE2 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				593C079076A34AA4A20261FC /* Debug */,
+				381039499E2F4D7BA0D55098 /* Release */,
+				4052367FBD1E4790931B610B /* MinSizeRel */,
+				2B793067692B4C4C91993532 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		14104074063B413FBBF3FFC8 /* Build configuration list for PBXNativeTarget "rapidsnarkStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1C91EE066C94885BE49A4EB /* Debug */,
+				B7F15F49C49149E0BD489687 /* Release */,
+				980A83EB09FE49BFBA101955 /* MinSizeRel */,
+				EFB0F55C505E4B819F633CC2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		26D6008125FC479C80650A65 /* Build configuration list for PBXProject "rapidsnark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4C3A2A157C443B5B40BDE77 /* Debug */,
+				0C87DA03A5B143DBA7273FFD /* Release */,
+				753FD6DABD3349C7AC1FAF2A /* MinSizeRel */,
+				87110770AFFC4CB18BF623B3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2A5C95F1C305435D892A2E7D /* Build configuration list for PBXNativeTarget "rapidsnarkStaticFrFq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31776FB93D854C339EE23020 /* Debug */,
+				766FC7B0D97644E3B0C357DC /* Release */,
+				0849ACD43BAB481FB0F09F00 /* MinSizeRel */,
+				51BCE0B17BB94166B88A4F85 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8DA4902A98D448F99B5E5F7D /* Build configuration list for PBXNativeTarget "fq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1387D0E9330D46E39E419A85 /* Debug */,
+				DEB5A238D940435FAEA2F240 /* Release */,
+				6F52C497680549BFB9044C9C /* MinSizeRel */,
+				42DEE609DA7E4E9FB73844B3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EAC96B55A1934BD6AB456EF0 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76DF87B0959440E8A752685D /* Debug */,
+				A287EB6FDA58482FB5A6EE95 /* Release */,
+				3EA82C9FE8FD44EEA97A8BFD /* MinSizeRel */,
+				58C1D40465564F50A06FE3F1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ED27C8F8D7FF43D8ACD73692 /* Build configuration list for PBXNativeTarget "prover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				628543F9D4894B6B992AB704 /* Debug */,
+				B560E70B8C994403B7A2C772 /* Release */,
+				3A3FDB5778F5460DBE0E278E /* MinSizeRel */,
+				86BE33A8981A4777B9F1995B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F484EE6094194BEE962E8DD2 /* Build configuration list for PBXNativeTarget "test_prover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23CD1D2FCD154558A645078B /* Debug */,
+				FEF8F12D8A1A4DF78ED65CBB /* Release */,
+				3513EFAA48B24E99B4EBF187 /* MinSizeRel */,
+				02707DFB4B6F4B44BA42942C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F7FD98B16F124623B375CDBA /* Build configuration list for PBXNativeTarget "fr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B737A1A16E184349BC97409E /* Debug */,
+				704460318A63420BB0C62DF5 /* Release */,
+				D4CEE7614735476D9276D8EB /* MinSizeRel */,
+				CC9B841EDFAC432A87D8F25B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FCB16B4C256C412B8CF87FA2 /* Build configuration list for PBXNativeTarget "rapidsnark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363BF5A301B84B9B9B65D701 /* Debug */,
+				679D3EDFE4474847B0327B33 /* Release */,
+				7C819D3ECA3340268E83AB6E /* MinSizeRel */,
+				65053851761F4E409B3F7ADE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F63FF1E76118493E8318B05A /* Project object */;
+}

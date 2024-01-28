@@ -38,6 +38,9 @@ if(USE_OPENMP)
         if(TARGET_PLATFORM MATCHES "android")
             message("OpenMP is used")
 
+        elseif(TARGET_PLATFORM MATCHES "ios")
+            message("OpenMP is used")
+
         elseif(CMAKE_HOST_SYSTEM_NAME STREQUAL "Linux")
             message("OpenMP is used")
 

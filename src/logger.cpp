@@ -44,8 +44,8 @@ const string logFileName = "MyLogFile.log";
 Logger::Logger()
 {
    m_File.open(logFileName.c_str(), ios::out|ios::app);
-   m_LogLevel	= LOG_LEVEL_TRACE;
-   m_LogType	= FILE_LOG;
+   m_LogLevel	= ENABLE_LOG;
+   m_LogType	= CONSOLE;
 
    // Initialize mutex
 #ifdef WIN32
