@@ -76,8 +76,7 @@ CMakeLists.txt.user
 .idea/
 libs
 output
-xcframework/Frameworks/rapidsnark.xcframework/ios-arm64/librapidsnark.a
-xcframework/Frameworks/rapidsnark.xcframework/ios-arm64_x86_64-simulator/librapidsnark.a
+
 build_prover_ios_simulator/build
 build_prover_ios_simulator/src
 depends/gmp/build_ios_arm64
